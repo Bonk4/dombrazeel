@@ -1,0 +1,316 @@
+.viewport {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.primary-content {
+  padding: 0 5rem;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.secondary-content {
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* Columns */
+
+/* Rows */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.justify-around {
+  justify-content: space-around !important;
+}
+
+.justify-start {
+  justify-content: start !important;
+}
+
+.justify-end {
+  justify-content: end !important;
+}
+
+/* Width */
+.w-100 {
+  width: 100%;
+}
+.w-33 {
+  width: 33%;
+}
+.w-66 {
+  width: 66%;
+}
+.w-67 {
+  width: 67%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-85 {
+  width: 85%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-95 {
+  width: 95%;
+}
+
+/* Text */
+.text-sm {
+  font-size: 0.9rem;
+}
+.text-lg {
+  font-size: 1.1rem;
+}
+.text-xl {
+  font-size: 1.2rem;
+}
+.text-white {
+  color: var(--white);
+}
+.text-grey {
+  color: var(--grey);
+}
+.text-red {
+  color: var(--red);
+}
+.text-orange {
+  color: var(--orange);
+}
+.text-blue {
+  color: var(--blue);
+}
+.text-pink {
+  color: var(--pink);
+}
+.text-purple {
+  color: var(--purple);
+}
+.text-green {
+  color: var(--green);
+}
+.text-yellow {
+  color: var(--yellow);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.text-none {
+  text-decoration: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+/* Margin */
+.m-auto {
+  margin: auto;
+}
+.m-vauto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.m-0 {
+  margin: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 0.1rem !important;
+}
+.mb-2 {
+  margin-bottom: 0.3rem !important;
+}
+.mb-3 {
+  margin-bottom: 0.5rem !important;
+}
+.mb-4 {
+  margin-bottom: 0.7rem !important;
+}
+.mb-5 {
+  margin-bottom: 0.9rem !important;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+.ml-1 {
+  margin-left: 0.1rem !important;
+}
+.ml-2 {
+  margin-left: 0.3rem !important;
+}
+.ml-3 {
+  margin-left: 0.5rem !important;
+}
+.ml-4 {
+  margin-left: 0.7rem !important;
+}
+.ml-5 {
+  margin-left: 0.9rem !important;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+.mr-1 {
+  margin-right: 0.1rem !important;
+}
+.mr-2 {
+  margin-right: 0.3rem !important;
+}
+.mr-3 {
+  margin-right: 0.5rem !important;
+}
+.mr-4 {
+  margin-right: 0.7rem !important;
+}
+.mr-5 {
+  margin-right: 0.9rem !important;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: 0.1rem !important;
+}
+.mt-2 {
+  margin-top: 0.3rem !important;
+}
+.mt-3 {
+  margin-top: 0.5rem !important;
+}
+.mt-4 {
+  margin-top: 0.7rem !important;
+}
+.mt-5 {
+  margin-top: 0.9rem !important;
+}
+
+.v-align-middle {
+  vertical-align: middle;
+}
+
+/* Padding */
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 0.2rem;
+}
+.p-2 {
+  padding: 0.4rem;
+}
+
+/* Outline/Border */
+.border-none {
+  border: none;
+}
+
+.border-rounded {
+  border: 1px solid var(--white);
+  border-radius: 0.8rem;
+}
+
+.outline-none {
+  outline: none;
+}
+
+/* Input */
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+  padding: 0.5rem;
+}
+input:focus {
+  outline: none;
+  border: 1px solid var(--white);
+}
+
+.header-input {
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
+/* Text blocks */
+.quote-block {
+  border-left: 0.2rem solid var(--white);
+  padding-left: 1rem;
+}
+.quote-block-orange {
+  border-left: 0.2rem solid var(--orange);
+  padding-left: 1rem;
+}
+.quote-block-red {
+  border-left: 0.2rem solid var(--red);
+  padding-left: 1rem;
+}
+
+/* Buttons */
+button {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  background-color: var(--purple);
+  color: var(--white);
+}
+button:hover {
+  outline: 1px solid var(--white);
+}
+.btn-primary {
+  background-color: var(--dark-green);
+}
+.btn-secondary {
+  background-color: var(--blue);
+}
+
+/* display */
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}

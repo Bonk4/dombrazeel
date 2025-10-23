@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('/fonts/redhat/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JB Mono';
+  src: url('/public/fonts/mono/JetBrainsMono_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  background-color: #000 !important;
+  font-size: 1em !important;
+  color: #fff !important;
+  font-family: "Red Hat Display", serif !important;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--white);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* variables */
+  --purple: #764b8e;
+  --pink: #aa5585;
+  --blue: #4e648e;
+  --yellow: #d4d46a;
+  --orange: #d4a16a;
+  --red: #bf607b;
+  --green: #a4c663;
+  --dark-green: rgb(164, 198, 99, 0.5);
+  --white: rgba(255, 255, 255, 0.87);
+  --grey: rgba(255, 255, 255, 0.5);
+}
+
+.mono {
+  font-family: "JB Mono", monospace !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0.5rem;
+}
+
+p,
+a {
+  font-size: 1.2rem;
+}
