@@ -12,11 +12,15 @@
   font-style: normal;
 }
 
+pre {
+  font-family: 'JB Mono', monospace;
+}
+
 :root {
   background-color: #000 !important;
   font-size: 1em !important;
   color: #fff !important;
-  font-family: "Red Hat Display", serif !important;
+  font-family: 'Red Hat Display', serif !important;
 
   line-height: 1.5;
   font-weight: 400;
@@ -41,10 +45,13 @@
   --dark-green: rgb(164, 198, 99, 0.5);
   --white: rgba(255, 255, 255, 0.87);
   --grey: rgba(255, 255, 255, 0.5);
+  --dark-grey: rgba(255, 255, 255, 0.2);
+
+  --border-radius: 0.4rem;
 }
 
 .mono {
-  font-family: "JB Mono", monospace !important;
+  font-family: 'JB Mono', monospace !important;
 }
 
 h1,

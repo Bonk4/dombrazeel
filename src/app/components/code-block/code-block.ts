@@ -4,8 +4,11 @@ import { Component, input } from '@angular/core';
   selector: 'db-code-block',
   imports: [],
   template: `
-    <div class="outline-1 outline-grey">
-      <pre>
+    @if (title() !== undefined) {
+      <h4>{{ title() }}</h4>
+    }
+    <div class="border border-rounded bg-dark-grey">
+      <pre class="p-2">
         <ng-content></ng-content>
       </pre>
     </div>
@@ -13,5 +16,5 @@ import { Component, input } from '@angular/core';
   styles: ``,
 })
 export class CodeBlock {
-  // code = input<string>('');
+  title = input<string | undefined>(undefined);
 }
