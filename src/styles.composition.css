@@ -120,6 +120,37 @@
   color: var(--yellow);
 }
 
+.outline-purple {
+  outline-color: var(--purple);
+}
+.outline-pink {
+  outline-color: var(--pink);
+}
+.outline-blue {
+  outline-color: var(--blue);
+}
+.outline-yellow {
+  outline-color: var(--yellow);
+}
+.outline-orange {
+  outline-color: var(--orange);
+}
+.outline-red {
+  outline-color: var(--red);
+}
+.outline-green {
+  outline-color: var(--green);
+}
+.outline-dark-green {
+  outline-color: var(--dark-green);
+}
+.outline-white {
+  outline-color: var(--white);
+}
+.outline-grey {
+  outline-color: var(--grey);
+}
+
 .italic {
   font-style: italic;
 }
@@ -251,6 +282,16 @@
 .outline-none {
   outline: none;
 }
+.outline-1 {
+  outline: 0.1rem !important;
+}
+.outline-2 {
+  outline: 0.2rem !important;
+}
+.outline-3 {
+  outline: 0.3rem !important;
+}
+.outline-
 
 /* Input */
 input {
