@@ -17,17 +17,16 @@ pre {
 }
 
 :root {
-  background-color: #000 !important;
+  color-scheme: dark;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  overflow: visible;
+
   font-size: 1em !important;
-  color: #fff !important;
   font-family: 'Red Hat Display', serif !important;
 
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: dark;
-  color: var(--white);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -45,7 +44,8 @@ pre {
   --dark-green: rgb(164, 198, 99, 0.5);
   --white: rgba(255, 255, 255, 0.87);
   --grey: rgba(255, 255, 255, 0.5);
-  --dark-grey: rgba(255, 255, 255, 0.2);
+  --dark-grey: #151515;
+  --black: #000;
 
   --border-radius: 0.4rem;
 }
@@ -64,7 +64,30 @@ p {
   margin-bottom: 0.5rem;
 }
 
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
 p,
 a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+a.nav-link {
+  color: var(--grey);
+  text-decoration: none;
+}
+a.nav-link:hover {
+  text-decoration: underline;
+}
+
+.font-sm {
+  font-size: 0.875rem;
+}
+
+.font-lg {
+  font-size: 1.4rem;
 }
