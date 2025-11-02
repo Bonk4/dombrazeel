@@ -1,0 +1,26 @@
+.btn {
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  background-color: var(--purple);
+  color: var(--white);
+}
+.btn:hover {
+  outline: 1px solid var(--white);
+}
+.btn-primary {
+  background-color: var(--dark-green);
+}
+.btn-secondary {
+  background-color: var(--blue);
+}
+.btn-link {
+  background-color: transparent;
+}
+.btn:hover {
+  outline: none !important;
+  text-decoration: underline !important;
+}

@@ -1,0 +1,18 @@
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+  padding: 0.5rem;
+}
+input:focus {
+  outline: none;
+  border: 1px solid var(--white);
+}
+
+.header-input {
+  font-size: 1.5rem;
+  color: var(--red);
+}

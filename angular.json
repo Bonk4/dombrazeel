@@ -31,8 +31,16 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "src/styles.composition.css"
+              "src/styles/styles.css",
+              "src/styles/styles.borders.css",
+              "src/styles/styles.buttons.css",
+              "src/styles/styles.card.css",
+              "src/styles/styles.colors.css",
+              "src/styles/styles.flex.css",
+              "src/styles/styles.input.css",
+              "src/styles/styles.margins.css",
+              "src/styles/styles.sizing.css",
+              "src/styles/styles.typography.css"
             ]
           },
           "configurations": {
@@ -89,8 +97,16 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "src/styles.composition.css"
+              "src/styles/styles.css",
+              "src/styles/styles.borders.css",
+              "src/styles/styles.buttons.css",
+              "src/styles/styles.card.css",
+              "src/styles/styles.colors.css",
+              "src/styles/styles.flex.css",
+              "src/styles/styles.input.css",
+              "src/styles/styles.margins.css",
+              "src/styles/styles.sizing.css",
+              "src/styles/styles.typography.css"
             ]
           }
         },

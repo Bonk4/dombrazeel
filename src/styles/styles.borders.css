@@ -1,0 +1,74 @@
+.border-none {
+  border: none;
+}
+
+.border {
+  border: 1px solid var(--white);
+}
+
+.border-top {
+  border-top: 1px solid var(--white);
+}
+.border-bottom {
+  border-bottom: 1px solid var(--white);
+}
+
+.border-rounded {
+  border-radius: var(--border-radius);
+}
+.border-top-rounded {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.border-bottom-rounded {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.outline-none {
+  outline: none;
+}
+.outline-1 {
+  outline: 0.1rem !important;
+}
+.outline-2 {
+  outline: 0.2rem !important;
+}
+.outline-3 {
+  outline: 0.3rem !important;
+}
+
+.outline-purple {
+  outline-color: var(--purple);
+}
+.outline-pink {
+  outline-color: var(--pink);
+}
+.outline-blue {
+  outline-color: var(--blue);
+}
+.outline-yellow {
+  outline-color: var(--yellow);
+}
+.outline-orange {
+  outline-color: var(--orange);
+}
+.outline-red {
+  outline-color: var(--red);
+}
+.outline-green {
+  outline-color: var(--green);
+}
+.outline-dark-green {
+  outline-color: var(--dark-green);
+}
+.outline-white {
+  outline-color: var(--white);
+}
+.outline-grey {
+  outline-color: var(--grey);
+}
+
+.italic {
+  font-style: italic;
+}

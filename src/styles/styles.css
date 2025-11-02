@@ -54,40 +54,38 @@ pre {
   font-family: 'JB Mono', monospace !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 0.5rem;
+.viewport {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-
-p,
-a {
-  font-size: 1.1rem;
+.primary-content {
+  padding: 0 5rem;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
-a.nav-link {
-  color: var(--grey);
-  text-decoration: none;
+.secondary-content {
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
-a.nav-link:hover {
-  text-decoration: underline;
-}
-
-.font-sm {
-  font-size: 0.875rem;
+.sticky {
+  position: sticky !important;
 }
 
-.font-lg {
-  font-size: 1.4rem;
+/* display */
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+
+/* overflow */
+.of-hidden {
+  overflow: hidden;
 }
