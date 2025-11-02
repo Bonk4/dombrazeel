@@ -8,6 +8,7 @@
   --size-lg: 1rem;
   --size-xl: 1.5rem;
   --size-2xl: 2rem;
+  --size-3xl: 2.5rem;
 }
 
 .v-align-middle {
@@ -85,6 +86,11 @@
 .mb-2xl { margin-bottom: var(--size-2xl) !important; }
 .ml-2xl { margin-left: var(--size-2xl) !important; }
 .mr-2xl { margin-right: var(--size-2xl) !important; }
+.m-3xl { margin: var(--size-3xl) !important; }
+.mt-3xl { margin-top: var(--size-3xl) !important; }
+.mb-3xl { margin-bottom: var(--size-3xl) !important; }
+.ml-3xl { margin-left: var(--size-3xl) !important; }
+.mr-3xl { margin-right: var(--size-3xl) !important; }
 .p-0 { padding: 0 !important; }
 .pt-0 { padding-top: 0 !important; }
 .pb-0 { padding-bottom: 0 !important; }
@@ -130,5 +136,10 @@
 .pb-2xl { padding-bottom: var(--size-2xl) !important; }
 .pl-2xl { padding-left: var(--size-2xl) !important; }
 .pr-2xl { padding-right: var(--size-2xl) !important; }
+.p-3xl { padding: var(--size-3xl) !important; }
+.pt-3xl { padding-top: var(--size-3xl) !important; }
+.pb-3xl { padding-bottom: var(--size-3xl) !important; }
+.pl-3xl { padding-left: var(--size-3xl) !important; }
+.pr-3xl { padding-right: var(--size-3xl) !important; }
 
 <!-- prettier-ignore-end -->

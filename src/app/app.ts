@@ -19,7 +19,7 @@ import { Observable } from 'rxjs';
               [size]="'lg'"
             />
           </div>
-          <div class="m-header w-full">
+          <div class="m-header w-full ml-5">
             <h1 class="mt-0 mb-0">Dominic Brazeel</h1>
             <div class="flex-row justify-between mt-0 mb-0">
               <p class="mt-0 italic">Senior Web Developer</p>
