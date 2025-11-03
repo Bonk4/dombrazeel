@@ -10,7 +10,7 @@ import { NgClass } from '@angular/common';
       [ngClass]="{
         'btn-primary': type() === 'primary',
         'btn-secondary': type() === 'secondary',
-        'btn-link p-0': type() === 'link',
+        'btn-link': type() === 'link',
       }"
     >
       <ng-content />

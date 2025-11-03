@@ -10,10 +10,10 @@ const meta: Meta<Avatar> = {
 export default meta;
 type Story = StoryObj<Avatar>;
 
-export const Primary: Story = {
+export const Default: Story = {
   render: () => ({
     template: `
-      <db-avatar>Primary</db-avatar>
+      <db-avatar [img]="'img/halloween_2025_zoomed.png'">Primary</db-avatar>
     `,
   }),
 };
