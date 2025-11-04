@@ -9,9 +9,11 @@ import { NgClass } from '@angular/common';
       class="card border border-rounded"
       [ngClass]="{
         'card-image': img() !== undefined,
-        'bg-red': background() === 'red',
-        'bg-orange': background() === 'orange',
+        'red-card': background() === 'red',
+        'purple-card': background() === 'purple',
+        'green-card': background() === 'green',
       }"
+      (click)="redirect()"
     >
       @if (img() !== undefined) {
         <img class="card-image border-top-rounded" [src]="img()" alt="picture" />
@@ -25,18 +27,25 @@ import { NgClass } from '@angular/common';
   styles: `
     .card {
       background-color: var(--black);
+      -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
     }
-    .bg-red:hover {
-      background-color: var(--red);
-      -webkit-transition: background-color 1000ms linear;
-      -ms-transition: background-color 1000ms linear;
-      transition: background-color 1000ms linear;
+    .card:hover {
+      cursor: pointer;
+      background-color: var(--pink);
+      -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
     }
-    .card > .bg-orange:hover {
-      background-color: var(--orange);
-      -webkit-transition: background-color 1000ms linear;
-      -ms-transition: background-color 1000ms linear;
-      transition: background-color 1000ms linear;
+    .red-card:hover {
+      background-color: var(--red) !important;
+    }
+    .purple-card:hover {
+      background-color: var(--purple) !important;
+    }
+    .green-card:hover {
+      background-color: var(--dark-green) !important;
     }
   `,
 })
@@ -44,7 +53,14 @@ export class Card {
   title = input<string>('');
   desc = input<string>('');
   img = input<string | undefined>(undefined);
-  background = input<'red' | 'orange' | undefined>(undefined);
+  background = input<'red' | 'purple' | 'green' | undefined>(undefined);
+  href = input<string | undefined>(undefined);
 
   imageCardWidth: number = 9.375;
+
+  redirect() {
+    if (this.href() !== undefined) {
+      window.open(this.href(), '_blank');
+    }
+  }
 }

@@ -1,3 +1,11 @@
+:root {
+  --border-size-1: 0.1rem;
+  --border-size-2: 0.3rem;
+  --border-size-3: 0.5rem;
+  --border-size-4: 0.7rem;
+  --border-size-5: 0.9rem;
+}
+
 .border-none {
   border: none;
 }
@@ -38,6 +46,10 @@
   outline: 0.3rem !important;
 }
 
+.outline-none {
+  outline: none;
+}
+
 .outline-purple {
   outline-color: var(--purple);
 }
@@ -69,6 +81,97 @@
   outline-color: var(--grey);
 }
 
-.italic {
-  font-style: italic;
+.b-0 {
+  border: none !important;
+}
+.b-1 {
+  border: var(--border-size-1) !important;
+}
+.b-2 {
+  border: var(--border-size-2) !important;
+}
+.b-3 {
+  border: var(--border-size-3) !important;
+}
+.b-4 {
+  border: var(--border-size-4) !important;
+}
+.b-5 {
+  border: var(--border-size-5) !important;
+}
+
+.bl-0 {
+  border-left: none !important;
+}
+.bl-1 {
+  border-left: var(--border-size-1) !important;
+}
+.bl-2 {
+  border-left: var(--border-size-2) !important;
+}
+.bl-3 {
+  border-left: var(--border-size-3) !important;
+}
+.bl-4 {
+  border-left: var(--border-size-4) !important;
+}
+.bl-5 {
+  border-left: var(--border-size-5) !important;
+}
+
+.br-0 {
+  border-right: none !important;
+}
+.br-1 {
+  border-right: var(--border-size-1) !important;
+}
+.br-2 {
+  border-right: var(--border-size-2) !important;
+}
+.br-3 {
+  border-right: var(--border-size-3) !important;
+}
+.br-4 {
+  border-right: var(--border-size-4) !important;
+}
+.br-5 {
+  border-right: var(--border-size-5) !important;
+}
+
+.bt-0 {
+  border-top: none !important;
+}
+.bt-1 {
+  border-top: var(--border-size-1) !important;
+}
+.bt-2 {
+  border-top: var(--border-size-2) !important;
+}
+.bt-3 {
+  border-top: var(--border-size-3) !important;
+}
+.bt-4 {
+  border-top: var(--border-size-4) !important;
+}
+.bt-5 {
+  border-top: var(--border-size-5) !important;
+}
+
+.bb-0 {
+  border-bottom: none !important;
+}
+.bb-1 {
+  border-bottom: var(--border-size-1) !important;
+}
+.bb-2 {
+  border-bottom: var(--border-size-2) !important;
+}
+.bb-3 {
+  border-bottom: var(--border-size-3) !important;
+}
+.bb-4 {
+  border-bottom: var(--border-size-4) !important;
+}
+.bb-5 {
+  border-bottom: var(--border-size-5) !important;
 }

@@ -1,13 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { Projects } from './features/projects/projects';
 import { Avatar } from './components/avatar/avatar';
-import { CodeBlock } from './components/code-block/code-block';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { FileService } from './services/file-service';
+import { Proficiencies } from './features/proficiencies/proficiencies';
+import { Principles } from './features/principles/principles';
 
 @Component({
   selector: 'app-root',
-  imports: [Projects, Avatar, CodeBlock],
+  imports: [Projects, Avatar, Proficiencies, Principles],
   template: `
     <div class="page-section bg-dark-grey">
       <div class="content">
@@ -15,7 +15,7 @@ import { Observable } from 'rxjs';
           <div class="avatar m-header mr-3xl">
             <db-avatar
               img="img/halloween_2025_zoomed.png"
-              alt="me as a wizard at a halloween party, 2025"
+              alt="Dominic at a halloween party, 2025"
               [size]="'lg'"
             />
           </div>
@@ -32,14 +32,16 @@ import { Observable } from 'rxjs';
     <div class="page-section header pt-3 bg-dark-grey border-bottom sticky">
       <div class="content mb-3 mt-3">
         <div class="flex-row justify-between">
-          <div class="flex-row justify-start bold">
+          <div class="flex-row bold">
             <a class="nav-link text-yellow mr-3" href="#about">About</a>
             <a class="nav-link text-orange mr-3" href="#proficiencies">Proficiencies</a>
             <a class="nav-link text-red mr-3" href="https://dombrazeel-library.vercel.app"
               >Design Library</a
             >
             <a class="nav-link text-pink mr-3" href="#db-projects">Projects</a>
-            <a class="nav-link text-purple mr-3" href="#db-projects">Thing 1</a>
+            <a class="nav-link text-purple mr-3" href="#db-principles">Coding Principles</a>
+          </div>
+          <div class="flex-row bold">
             <a
               class="nav-link text-blue mr-3"
               href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
@@ -60,128 +62,17 @@ import { Observable } from 'rxjs';
           metalcore, and clean code.
         </p>
 
-        <h2 class="text-orange" id="proficiencies">Proficiencies</h2>
-        <div class="flex-row justify-around languages bg-purple border-rounded of-hidden">
-          <p class="w-full text-center bg-purple">C#</p>
-          <p class="w-full text-center bg-blue">TS</p>
-          <p class="w-full text-center bg-orange">JS</p>
-          <p class="w-full text-center bg-red">SQL</p>
-        </div>
-
-        <div class="flex-row">
-          <div class="w-50">
-            <ul>
-              <li>.NET Framework/Core</li>
-              <ul>
-                <li>Web APIs</li>
-                <li>Server Apps</li>
-                <li>Code-first database management with Entity Framework</li>
-              </ul>
-              <li>JavaScript/TypeScript</li>
-              <li>JS Frameworks</li>
-              <ul>
-                <li>Angular</li>
-                <li>AngularJS</li>
-                <li>React</li>
-              </ul>
-              <li>SQL</li>
-            </ul>
-          </div>
-
-          <div class="w-50">
-            <db-code-block title="helloWorld.cs">
-              public class Program &lcub; Console.Print('hello, world!'); &rcub;
-            </db-code-block>
-            <db-code-block title="helloWorld.ts">
-              &lcub; console.log('hello, world!'); &rcub;</db-code-block
-            >
-            <db-code-block title="helloWorld.sql">
-              SELECT 'hello, world!' from main;
-            </db-code-block>
-          </div>
-        </div>
+        <db-proficiencies />
 
         <db-projects id="db-projects" />
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <h2>Heading 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <h2>Heading 3</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
+        <db-principles id="db-principles" />
       </div>
     </div>
 
     <div class="page-section m-0 footer bg-dark-grey border-top sticky">
       <div class="content">
-        <p>
+        <p class="mono font-sm">
           Coded in
           <span class="mono"
             ><span class="text-blue">currentDate</span>.<span class="text-green">getFullYear</span
@@ -206,7 +97,7 @@ import { Observable } from 'rxjs';
       top: 0;
     }
     .footer {
-      height: 4rem;
+      height: 3rem;
       bottom: 0;
     }
     .m-header {
@@ -216,33 +107,12 @@ import { Observable } from 'rxjs';
       height: 5rem;
       width: 5rem;
     }
-    .languages {
-      font-family: 'JB Mono', monospace;
-      font-weight: 900;
-    }
-    .languages > p {
-      margin: 0;
-      font-size: 2.5rem;
-    }
   `,
 })
 export class App {
-  private http = inject(HttpClient);
+  private fileService = inject(FileService);
 
   downloadResume() {
-    const url = 'DominicBrazeel_Resume.pdf';
-
-    this.downloadFile(url).subscribe((blob) => {
-      const a = document.createElement('a');
-      const objectUrl = URL.createObjectURL(blob);
-      a.href = objectUrl;
-      a.download = 'DominicBrazeel_resume.pdf';
-      a.click();
-      URL.revokeObjectURL(objectUrl);
-    });
-  }
-
-  downloadFile(url: string): Observable<Blob> {
-    return this.http.get(url, { responseType: 'blob' });
+    this.fileService.downloadAsset('Dominic_Brazeel_Resume.pdf');
   }
 }

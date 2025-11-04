@@ -54,6 +54,10 @@ a.nav-link:hover {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-none {
   text-decoration: none;
 }

@@ -1,5 +1,5 @@
-import { argsToTemplate, Meta, StoryObj } from '@storybook/angular';
 import { CodeBlock } from './code-block';
+import { Meta, StoryObj } from '@storybook/angular';
 
 const meta: Meta<CodeBlock> = {
   title: 'Library/Code Block',
@@ -15,29 +15,17 @@ export const Default: Story = {
     props: {
       ...args,
     },
-    template: `
-      <db-code-block>
-        {{ '{' }}
-          var helloWorld = "Hello World";
-          console.log(helloWorld);
-        {{ '}' }}
-      </db-code-block>
-    `,
   }),
 };
 
-export const WithTitle: Story = {
+const typescriptCode: string = `{
+\tconsole.log('Hello World!');
+}`;
+export const Typescript: Story = {
   render: ({ ...args }) => ({
     props: {
-      ...args,
+      title: 'helloWorld.ts',
+      script: typescriptCode,
     },
-    template: `
-      <db-code-block title="code.js">
-        {{ '{' }}
-          var helloWorld = "Hello World";
-          console.log(helloWorld);
-        {{ '}' }}
-      </db-code-block>
-    `,
   }),
 };
