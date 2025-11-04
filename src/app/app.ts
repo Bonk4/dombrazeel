@@ -35,7 +35,9 @@ import { Observable } from 'rxjs';
           <div class="flex-row justify-start bold">
             <a class="nav-link text-yellow mr-3" href="#about">About</a>
             <a class="nav-link text-orange mr-3" href="#proficiencies">Proficiencies</a>
-            <a class="nav-link text-red mr-3" href="#">Design Library</a>
+            <a class="nav-link text-red mr-3" href="https://dombrazeel-library.vercel.app"
+              >Design Library</a
+            >
             <a class="nav-link text-pink mr-3" href="#db-projects">Projects</a>
             <a class="nav-link text-purple mr-3" href="#db-projects">Thing 1</a>
             <a
