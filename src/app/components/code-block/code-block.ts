@@ -5,16 +5,16 @@ import { Component, computed, input } from '@angular/core';
   imports: [],
   template: `
     @if (title() !== undefined) {
-      <h4 class="mono">{{ title() }}</h4>
+      <h4 class="mono ml-5">{{ title() }}</h4>
     }
     <div class="border border-rounded bg-black w-full h-full">
       <div class="mono m-2">
         <table class="code-block">
           @for (line of scriptLines(); track $index) {
-            <tr class="">
-              <td class="text-grey">{{ $index + 1 }}</td>
+            <tr class="font-sm">
+              <td class="text-grey font-sm">{{ $index + 1 }}</td>
               <td class="pl-3">
-                <p class="m-0">
+                <p class="m-0 font-sm">
                   @for (tab of tabs(line); track tab) {
                     <span class="tab"></span>
                   }

@@ -13,10 +13,12 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  font-weight: 1000;
 }
 
 p,
 a {
+  color: var(--white);
   font-size: 1.1rem;
 }
 
@@ -36,6 +38,14 @@ a.nav-link {
 }
 a.nav-link:hover {
   text-decoration: underline;
+}
+
+.transform-upper {
+  text-transform: uppercase;
+}
+
+.transform-lower {
+  text-transform: lowercase;
 }
 
 .font-sm {
@@ -109,4 +119,27 @@ a.nav-link:hover {
 .quote-block-red {
   border-left: 0.2rem solid var(--red);
   padding-left: 1rem;
+}
+
+/* underline */
+.highlight-underline-pink {
+  box-shadow: inset 0 -0.45em 0 var(--pink);
+}
+.highlight-underline-purple {
+  box-shadow: inset 0 -0.45em 0 var(--purple);
+}
+.highlight-underline-green {
+  box-shadow: inset 0 -0.45em 0 var(--green);
+}
+.highlight-underline-dark-green {
+  box-shadow: inset 0 -0.45em 0 var(--dark-green);
+}
+.highlight-underline-blue {
+  box-shadow: inset 0 -0.45em 0 var(--blue);
+}
+.highlight-underline-yellow {
+  box-shadow: inset 0 -0.45em 0 var(--yellow);
+}
+.highlight-underline-orange {
+  box-shadow: inset 0 -0.45em 0 var(--orange);
 }

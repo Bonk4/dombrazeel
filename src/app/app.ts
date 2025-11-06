@@ -1,13 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { Projects } from './features/projects/projects';
 import { Avatar } from './components/avatar/avatar';
+import { RouterOutlet } from '@angular/router';
 import { FileService } from './services/file-service';
-import { Proficiencies } from './features/proficiencies/proficiencies';
-import { Principles } from './features/principles/principles';
 
 @Component({
   selector: 'app-root',
-  imports: [Projects, Avatar, Proficiencies, Principles],
+  imports: [Avatar, RouterOutlet],
   template: `
     <div class="page-section bg-dark-grey">
       <div class="content">
@@ -35,11 +33,11 @@ import { Principles } from './features/principles/principles';
           <div class="flex-row bold">
             <a class="nav-link text-yellow mr-3" href="#about">About</a>
             <a class="nav-link text-orange mr-3" href="#proficiencies">Proficiencies</a>
-            <a class="nav-link text-red mr-3" href="https://dombrazeel-library.vercel.app"
+            <a class="nav-link text-red mr-3" href="/projects">Projects</a>
+            <a class="nav-link text-pink mr-3" href="/principles">Coding Principles</a>
+            <a class="nav-link text-purple mr-3" href="https://dombrazeel-library.vercel.app"
               >Design Library</a
             >
-            <a class="nav-link text-pink mr-3" href="#db-projects">Projects</a>
-            <a class="nav-link text-purple mr-3" href="#db-principles">Coding Principles</a>
           </div>
           <div class="flex-row bold">
             <a
@@ -55,59 +53,25 @@ import { Principles } from './features/principles/principles';
 
     <div class="page-section">
       <div class="content">
-        <h2 class="text-yellow" id="about">About Me</h2>
-        <p>
-          I'm a full-stack web developer based in Kansas City. I've been developing web applications
-          professionally since 2014, utilizing a variety of .NET and NodeJS tools. I love beer,
-          metalcore, and clean code.
-        </p>
-
-        <db-proficiencies />
-
-        <db-projects id="db-projects" />
-
-        <db-principles id="db-principles" />
+        <router-outlet />
       </div>
     </div>
 
-    <div class="page-section m-0 footer bg-dark-grey border-top sticky">
+    <div class="page-section m-0 footer bg-dark-grey border-top">
       <div class="content">
         <p class="mono font-sm">
           Coded in
-          <span class="mono"
-            ><span class="text-blue">currentDate</span>.<span class="text-green">getFullYear</span
+          <span class="mono">
+            {{ '{{' }} <span class="text-grey">new </span
+            ><span class="text-blue">Date</span>().<span class="text-green">getFullYear</span
             >()</span
           >
-          by Dominic Brazeel &#129304;
+          {{ '}}' }} by Dominic Brazeel &#129304;
         </p>
       </div>
     </div>
   `,
-  styles: `
-    .page-section {
-      width: 100%;
-      margin-bottom: 1.2rem;
-    }
-    .content {
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .header {
-      top: 0;
-    }
-    .footer {
-      height: 3rem;
-      bottom: 0;
-    }
-    .m-header {
-      margin-top: 2rem !important;
-    }
-    .avatar {
-      height: 5rem;
-      width: 5rem;
-    }
-  `,
+  styles: ``,
 })
 export class App {
   private fileService = inject(FileService);

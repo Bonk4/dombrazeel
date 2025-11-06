@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 import { CodeBlock } from '../../components/code-block/code-block';
 import { csharpHelloWorld, sqlHelloWorld, typescriptHelloWorld } from '../../scripts/scripts';
+import { ContentHeader } from '../../components/content-header/content-header';
 
 @Component({
   selector: 'db-proficiencies',
-  imports: [CodeBlock],
+  imports: [CodeBlock, ContentHeader],
   template: `
-    <h2 class="text-orange" id="proficiencies">Proficiencies</h2>
+    <db-content-header>Proficiencies</db-content-header>
+
     <div class="flex-row justify-around languages bg-purple border-rounded of-hidden">
-      <p class="w-full text-center bg-purple">C#</p>
       <p class="w-full text-center bg-blue">TS</p>
       <p class="w-full text-center bg-orange">JS</p>
+      <p class="w-full text-center bg-purple">C#</p>
       <p class="w-full text-center bg-red">SQL</p>
     </div>
 

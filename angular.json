@@ -32,6 +32,7 @@
             ],
             "styles": [
               "src/styles/styles.css",
+              "src/styles/styles.layout.css",
               "src/styles/styles.borders.css",
               "src/styles/styles.buttons.css",
               "src/styles/styles.card.css",
@@ -98,6 +99,7 @@
             ],
             "styles": [
               "src/styles/styles.css",
+              "src/styles/styles.layout.css",
               "src/styles/styles.borders.css",
               "src/styles/styles.buttons.css",
               "src/styles/styles.card.css",

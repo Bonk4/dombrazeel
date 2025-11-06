@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { Card } from '../../components/card/card';
+import { Card } from '../components/card/card';
+import { ContentHeader } from '../components/content-header/content-header';
 
 @Component({
   selector: 'db-projects',
-  imports: [Card],
+  imports: [Card, ContentHeader],
   template: `
-    <h2 class="text-pink pb-2">Projects</h2>
+    <db-content-header>Projects</db-content-header>
     <div class="flex-row justify-around">
       <db-card
         class="card-container"
