@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Principles } from './principles/principles';
 import { Projects } from './projects/projects';
+import { Contact } from './contact/contact';
 
 export const routes: Routes = [
   {
@@ -18,5 +19,10 @@ export const routes: Routes = [
     path: 'principles',
     title: 'Dominic Brazeel | Coding Principles',
     component: Principles,
+  },
+  {
+    path: 'contact',
+    title: 'Dominic Brazeel | Contact Info',
+    component: Contact,
   },
 ];

@@ -31,18 +31,22 @@ import { FileService } from './services/file-service';
       <div class="content mb-3 mt-3">
         <div class="flex-row justify-between">
           <div class="flex-row bold">
-            <a class="nav-link text-yellow mr-3" href="#about">About</a>
-            <a class="nav-link text-orange mr-3" href="#proficiencies">Proficiencies</a>
-            <a class="nav-link text-red mr-3" href="/projects">Projects</a>
-            <a class="nav-link text-pink mr-3" href="/principles">Coding Principles</a>
-            <a class="nav-link text-purple mr-3" href="https://dombrazeel-library.vercel.app"
+            <a class="nav-link text-yellow mr-3" href="#about">Home</a>
+            <a class="nav-link text-orange mr-3" href="/projects">Projects</a>
+            <a class="nav-link text-red mr-3" href="/principles">Coding Principles</a>
+            <a
+              class="nav-link text-pink mr-3"
+              href="https://dombrazeel-library.vercel.app"
+              target="_blank"
               >Design Library</a
             >
+            <a class="nav-link text-purple mr-3" href="/contact">Contact</a>
           </div>
           <div class="flex-row bold">
             <a
               class="nav-link text-blue mr-3"
               href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
+              target="_blank"
               >LinkedIn</a
             >
             <a class="nav-link text-dark-green mr-3" href="#" (click)="downloadResume()">Resume</a>
@@ -77,6 +81,6 @@ export class App {
   private fileService = inject(FileService);
 
   downloadResume() {
-    this.fileService.downloadAsset('Dominic_Brazeel_Resume.pdf');
+    this.fileService.downloadAsset('DominicBrazeel_Resume.pdf');
   }
 }
