@@ -7,7 +7,14 @@
 
 @font-face {
   font-family: 'JB Mono';
-  src: url('/public/fonts/mono/JetBrainsMono_wght.ttf') format('truetype');
+  src: url('/fonts/mono/JetBrainsMono_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetalMania';
+  src: url('/fonts/MetalMania-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +26,7 @@ pre {
 :root {
   color-scheme: dark;
   color: var(--white);
-  background-color: var(--dark-grey);
+  background-color: var(--black);
   overflow: visible;
 
   font-size: 1em !important;
@@ -34,6 +41,26 @@ pre {
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
+
+  /* color palettes */
+
+  /* primary */
+  --primary: red;
+  --secondary: white;
+
+  /* neon */
+  --rose: #f72585ff;
+  --fandango: #b5179eff;
+  --grape: #7209b7ff;
+  --chrysler-blue: #560badff;
+  --dark-blue: #480ca8ff;
+  --zaffre: #3a0ca3ff;
+  --palatinate-blue: #3f37c9ff;
+  --neon-blue: #4361eeff;
+  --chefchaouen-blue: #4895efff;
+  --vivid-sky-blue: #4cc9f0ff;
+
+  /* base dark palette */
   --purple: #764b8e;
   --pink: #aa5585;
   --blue: #4e648e;
@@ -47,7 +74,17 @@ pre {
   --dark-grey: #151515;
   --black: #000;
 
+  /* dark-blue palettee */
+  --dark-blue-grey: #1b262c;
+  --dark-dark-blue: #0f4c75;
+  --dark-blue: #3282b8;
+  --dark-light-blue: #bbe1fa;
+
   --border-radius: 0.4rem;
+}
+
+.metal {
+  font-family: 'MetalMania', fantasy !important;
 }
 
 .mono {
@@ -60,19 +97,9 @@ pre {
 }
 
 .primary-content {
-  padding: 0 5rem;
-  height: 97vh;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
+  min-height: 80vh;
 }
 
-.secondary-content {
-  height: 97vh;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-}
 .sticky {
   position: sticky !important;
 }

@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'db-content-header',
   imports: [],
   template: `
-    <h2 class="text-yellow">
+    <h1 class="metal text-yellow">
       <span class="highlight-underline-purple pl-3 pr-3">
         <ng-content />
       </span>
-    </h2>
+    </h1>
   `,
   styles: ``,
 })

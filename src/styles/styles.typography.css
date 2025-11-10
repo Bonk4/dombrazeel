@@ -64,12 +64,20 @@ a.nav-link:hover {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
 .bold {
   font-weight: 600;
 }
 
 .italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .text-none {
@@ -80,6 +88,12 @@ a.nav-link:hover {
   text-decoration: underline;
 }
 
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
 .text-white {
   color: var(--white) !important;
 }
@@ -111,6 +125,37 @@ a.nav-link:hover {
   color: var(--yellow) !important;
 }
 
+.text-rose {
+  color: var(--rose) !important;
+}
+.text-fandango {
+  color: var(--fandango) !important;
+}
+.text-grape {
+  color: var(--grape) !important;
+}
+.text-chrysler-blue {
+  color: var(--chrysler-blue) !important;
+}
+.text-dark-blue {
+  color: var(--dark-blue) !important;
+}
+.text-zaffre {
+  color: var(--zaffre) !important;
+}
+.text-palatinate-blue {
+  color: var(--palatinate-blue) !important;
+}
+.text-neon-blue {
+  color: var(--neon-blue) !important;
+}
+.text-chefchaouen-blue {
+  color: var(--chefchaouen-blue) !important;
+}
+.text-vivid-sky-blue {
+  color: var(--vivid-sky-blue) !important;
+}
+
 /* blocks */
 .quote-block {
   border-left: 0.2rem solid var(--white);
@@ -126,11 +171,20 @@ a.nav-link:hover {
 }
 
 /* underline */
+.highlight-underline-primary {
+  box-shadow: inset 0 -0.45em 0 var(--primary);
+}
+.highlight-underline-secondary {
+  box-shadow: inset 0 -0.45em 0 var(--secondary);
+}
 .highlight-underline-pink {
   box-shadow: inset 0 -0.45em 0 var(--pink);
 }
 .highlight-underline-purple {
   box-shadow: inset 0 -0.45em 0 var(--purple);
+}
+.highlight-underline-grape {
+  box-shadow: inset 0 -0.45em 0 var(--grape);
 }
 .highlight-underline-green {
   box-shadow: inset 0 -0.45em 0 var(--green);

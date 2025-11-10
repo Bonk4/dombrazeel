@@ -31,6 +31,15 @@
 .bg-dark-grey {
   background-color: var(--dark-grey) !important;
 }
+.bg-dark-blue {
+  background-color: var(--dark-blue) !important;
+}
+.bg-dark-dark-blue {
+  background-color: var(--dark-dark-blue) !important;
+}
+.bg-dark-blue-grey {
+  background-color: var(--dark-blue-grey) !important;
+}
 .bg-black {
   background-color: var(--black) !important;
 }

@@ -5,9 +5,9 @@ import { Component, computed, input } from '@angular/core';
   imports: [],
   template: `
     @if (title() !== undefined) {
-      <h4 class="mono ml-5">{{ title() }}</h4>
+      <h4 class="mono text-underline ml-5">{{ title() }}</h4>
     }
-    <div class="border border-rounded bg-black w-full h-full">
+    <div class="border border-rounded bg-dark-grey w-full">
       <div class="mono m-2">
         <table class="code-block">
           @for (line of scriptLines(); track $index) {
