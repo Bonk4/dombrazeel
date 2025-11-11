@@ -6,52 +6,50 @@ import { FileService } from './services/file-service';
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `
-    <div class="page-section bg-black mb-0">
-      <div class="content metal">
+    <div class="page-section bg-black deathstinger mb-0">
+      <div class="content">
         <div class="flex-row justify-between w-full">
-          <h1 class="metal m-auto-v w-50">Dominic Brazeel</h1>
+          <h1 class="m-auto-v w-50">Dominic Brazeel</h1>
           <div class="text-end w-50">
             <p class="m-auto-v italic w-full h-50 v-align-middle">Senior Web Developer</p>
             <p class="m-auto-v italic w-full h-50 v-align-middle">
-              hardcore | metalcore | dotNET core
+              hardcore - metalcore - dotNET core
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="page-section header pt-3 bg-black border-bottom sticky">
+    <div class="page-section header bg-black deathstinger border-bottom sticky">
       <div class="content mb-3 mt-3">
         <div class="flex-row justify-between">
-          <div class="flex-row bold">
-            <a class="nav-link text-rose mr-3" href="#about">Home</a>
-            <a class="nav-link text-fandango mr-3" href="/projects">Projects</a>
-            <a class="nav-link text-grape mr-3" href="/principles">Coding Principles</a>
-            <a
-              class="nav-link text-chrysler-blue mr-3"
-              href="https://dombrazeel-library.vercel.app"
-              target="_blank"
-              >Design Library</a
+          <div class="flex-row">
+            <a class="nav-link mr-3" href="#about">home</a>
+            <a class="nav-link mr-3" href="/projects">projects</a>
+            <a class="nav-link mr-3" href="/principles">coding principles</a>
+            <a class="nav-link mr-3" href="https://dombrazeel-library.vercel.app" target="_blank"
+              >design library</a
             >
-            <a class="nav-link text-dark-blue mr-3" href="/contact">Contact</a>
+            <a class="nav-link mr-3" href="/contact">Contact</a>
           </div>
-          <div class="flex-row bold">
+          <div class="flex-row">
             <a
-              class="nav-link text-neon-blue mr-3"
+              class="nav-link mr-3"
               href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
               target="_blank"
-              >LinkedIn</a
+              >linkedIn</a
             >
-            <a class="nav-link text-yellow mr-3" href="#" (click)="downloadResume()">Resume</a>
+            <a class="nav-link mr-3" href="#" (click)="downloadResume()">resume</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="page-section">
+    <div class="page-section mt-0">
       <div class="content primary-content">
         <router-outlet />
       </div>
     </div>
+
     <div class="page-section m-0 footer bg-black border-top">
       <div class="content">
         <p class="mono font-sm">
@@ -66,7 +64,11 @@ import { FileService } from './services/file-service';
       </div>
     </div>
   `,
-  styles: ``,
+  styles: `
+    .logo {
+      outline: darkred 1px solid;
+    }
+  `,
 })
 export class App {
   private fileService = inject(FileService);

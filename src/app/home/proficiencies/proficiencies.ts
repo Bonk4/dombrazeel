@@ -9,11 +9,13 @@ import { ContentHeader } from '../../components/content-header/content-header';
   template: `
     <db-content-header>Proficiencies</db-content-header>
 
-    <div class="flex-row justify-around languages bg-purple border-rounded of-hidden">
-      <p class="w-full text-center bg-blue">TS</p>
-      <p class="w-full text-center bg-orange">JS</p>
-      <p class="w-full text-center bg-purple">C#</p>
-      <p class="w-full text-center bg-red">SQL</p>
+    <div
+      class="flex-row justify-around languages mono bg-purple b-1 border-secondary border-rounded of-hidden"
+    >
+      <p class="m-0 w-full text-center bg-blue">TS</p>
+      <p class="m-0 w-full text-center bg-orange">JS</p>
+      <p class="m-0 w-full text-center bg-purple">C#</p>
+      <p class="m-0 w-full text-center bg-red">SQL</p>
     </div>
 
     <div class="flex-row">
@@ -44,12 +46,7 @@ import { ContentHeader } from '../../components/content-header/content-header';
     </div>
   `,
   styles: `
-    .languages {
-      font-family: 'JB Mono', monospace;
-      font-weight: 900;
-    }
     .languages > p {
-      margin: 0;
       font-size: 2.5rem;
     }
   `,

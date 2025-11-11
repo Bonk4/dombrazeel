@@ -19,6 +19,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Rockakura';
+  src: url('/fonts/Rockakura-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Death Stinger';
+  src: url('/fonts/DeathStingerItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 pre {
   font-family: 'JB Mono', monospace;
 }
@@ -45,7 +59,7 @@ pre {
   /* color palettes */
 
   /* primary */
-  --primary: red;
+  --primary: darkred;
   --secondary: white;
 
   /* neon */
@@ -85,6 +99,14 @@ pre {
 
 .metal {
   font-family: 'MetalMania', fantasy !important;
+}
+
+.rockakura {
+  font-family: 'Rockakura', fantasy !important;
+}
+
+.deathstinger {
+  font-family: 'Death Stinger', fantasy !important;
 }
 
 .mono {

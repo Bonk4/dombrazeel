@@ -1,9 +1,9 @@
 :root {
-  --border-size-1: 0.1rem;
-  --border-size-2: 0.3rem;
-  --border-size-3: 0.5rem;
-  --border-size-4: 0.7rem;
-  --border-size-5: 0.9rem;
+  --border-size-1: 0.1rem solid;
+  --border-size-2: 0.3rem solid;
+  --border-size-3: 0.5rem solid;
+  --border-size-4: 0.7rem solid;
+  --border-size-5: 0.9rem solid;
 }
 
 .border-none {
@@ -174,4 +174,11 @@
 }
 .bb-5 {
   border-bottom: var(--border-size-5) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+.border-secondary {
+  border-color: var(--secondary) !important;
 }
