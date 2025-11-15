@@ -20,7 +20,7 @@ import { NgClass } from '@angular/common';
       }
       <div class="p-lg">
         <h3 class="mt-0">{{ title() }}</h3>
-        <p class="text-grey font-sm">{{ desc() }}</p>
+        <p class="text-grey font-sm"><ng-content /></p>
       </div>
     </div>
   `,
@@ -39,7 +39,7 @@ import { NgClass } from '@angular/common';
       transition: background-color 500ms linear;
     }
     .red-card:hover {
-      background-color: var(--red) !important;
+      background-color: var(--primary) !important;
     }
     .purple-card:hover {
       background-color: var(--purple) !important;

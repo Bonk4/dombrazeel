@@ -8,11 +8,13 @@ import { FileService } from './services/file-service';
   template: `
     <div class="page-section bg-black deathstinger mb-0">
       <div class="content">
-        <div class="flex-row justify-between w-full">
-          <h1 class="m-auto-v w-50">Dominic Brazeel</h1>
-          <div class="text-end w-50">
-            <p class="m-auto-v italic w-full h-50 v-align-middle">Senior Web Developer</p>
-            <p class="m-auto-v italic w-full h-50 v-align-middle">
+        <div class="row">
+          <div class="col-6 desktop-text-start mobile-text-center">
+            <h1 class="m-auto-v w-full">Dominic Brazeel</h1>
+          </div>
+          <div class="col-6 mt-2 mb-2 desktop-text-end mobile-text-center">
+            <p class="d-inline-block m-auto-v w-full h-50 v-align-middle">Senior Web Developer</p>
+            <p class="d-inline-block m-auto-v w-full h-50 v-align-middle">
               hardcore - metalcore - dotNET core
             </p>
           </div>

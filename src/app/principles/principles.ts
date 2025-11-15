@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CodeBlock } from '../components/code-block/code-block';
 import { csharpBadIfCheck, csharpBetterIfCheck } from '../scripts/scripts';
 import { ContentHeader } from '../components/content-header/content-header';
+import { Script } from '../components/code-block/models/script';
 
 @Component({
   selector: 'db-principles',
@@ -23,12 +24,12 @@ import { ContentHeader } from '../components/content-header/content-header';
       Simple if checks, for example. You can do everything in one line, if you want (and just
       learned LINQ):
     </p>
-    <db-code-block title="badIfCheck.cs" [script]="csharpBadIfCheck" />
+    <db-code-block title="badIfCheck.cs" [scripts]="csharpBadIfCheck" />
     <p class="mb-4">
       But I'd prefer the code to be legible to the next developer (which will probably be myself a
       month later). So lets make it legible:
     </p>
-    <db-code-block title="betterIfCheck.cs" [script]="csharpBetterIfCheck" />
+    <db-code-block title="betterIfCheck.cs" [scripts]="csharpBetterIfCheck" />
     <p>
       It's not rocket science, because it shouldn't be. Simple practices like this compound over
       time, and create a far better codebase for future developers.
@@ -52,6 +53,6 @@ import { ContentHeader } from '../components/content-header/content-header';
   styles: ``,
 })
 export class Principles {
-  protected readonly csharpBadIfCheck = csharpBadIfCheck;
-  protected readonly csharpBetterIfCheck = csharpBetterIfCheck;
+  csharpBadIfCheck: Script[] = [{ name: 'badIfCheck.cs', code: csharpBadIfCheck }];
+  csharpBetterIfCheck: Script[] = [{ name: 'betterIfCheck.cs', code: csharpBetterIfCheck }];
 }

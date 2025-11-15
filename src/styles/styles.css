@@ -33,6 +33,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond Italic';
+  src: url('/fonts/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 pre {
   font-family: 'JB Mono', monospace;
 }
@@ -44,7 +58,7 @@ pre {
   overflow: visible;
 
   font-size: 1em !important;
-  font-family: 'Red Hat Display', serif !important;
+  font-family: 'EB Garamond', serif !important;
 
   line-height: 1.5;
   font-weight: 400;
@@ -55,12 +69,13 @@ pre {
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
+  --mobile: 800px;
 
   /* color palettes */
-
   /* primary */
   --primary: darkred;
   --secondary: white;
+  --link: red;
 
   /* neon */
   --rose: #f72585ff;
@@ -95,6 +110,10 @@ pre {
   --dark-light-blue: #bbe1fa;
 
   --border-radius: 0.4rem;
+}
+
+.italic {
+  font-family: 'EB Garamond Italic', serif !important;
 }
 
 .metal {
@@ -135,6 +154,9 @@ pre {
 }
 .d-inline-block {
   display: inline-block;
+}
+.d-inline {
+  display: inline;
 }
 
 /* overflow */

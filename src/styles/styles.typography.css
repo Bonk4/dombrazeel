@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: var(--grey);
+  color: var(--link);
 }
 
 .text-sm {
@@ -70,6 +70,42 @@ a.nav-link:hover {
 
 .text-end {
   text-align: end;
+}
+
+.desktop-text-center {
+  @media (min-width: 800px) {
+    text-align: center !important;
+  }
+}
+
+.desktop-text-start {
+  @media (min-width: 800px) {
+    text-align: start !important;
+  }
+}
+
+.desktop-text-end {
+  @media (min-width: 800px) {
+    text-align: end !important;
+  }
+}
+
+.mobile-text-end {
+  @media (max-width: 800px) {
+    text-align: end !important;
+  }
+}
+
+.mobile-text-start {
+  @media (max-width: 800px) {
+    text-align: end !important;
+  }
+}
+
+.mobile-text-center {
+  @media (max-width: 800px) {
+    text-align: center !important;
+  }
 }
 
 .bold {

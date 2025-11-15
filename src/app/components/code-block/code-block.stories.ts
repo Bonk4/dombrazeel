@@ -11,9 +11,24 @@ export default meta;
 type Story = StoryObj<CodeBlock>;
 
 export const Default: Story = {
-  render: ({ ...args }) => ({
+  render: () => ({
     props: {
-      ...args,
+      scripts: [
+        {
+          name: 'helloWorld.ts',
+          code: 'console.log("hello, world!");',
+        },
+        {
+          name: 'helloWorld.cs',
+          code: `{
+             \tConsole.Write("hello, world!");
+             }`,
+        },
+        {
+          name: 'helloWorld.sql',
+          code: "select 'hello, world!' from main;",
+        },
+      ],
     },
   }),
 };

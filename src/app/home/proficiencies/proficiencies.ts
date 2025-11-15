@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CodeBlock } from '../../components/code-block/code-block';
 import { csharpHelloWorld, sqlHelloWorld, typescriptHelloWorld } from '../../scripts/scripts';
 import { ContentHeader } from '../../components/content-header/content-header';
+import { Script } from '../../components/code-block/models/script';
 
 @Component({
   selector: 'db-proficiencies',
@@ -39,9 +40,7 @@ import { ContentHeader } from '../../components/content-header/content-header';
       </div>
 
       <div class="w-50">
-        <db-code-block title="helloWorld.cs" [script]="csharpHelloWorld" />
-        <db-code-block title="helloWorld.ts" [script]="typescriptHelloWorld" />
-        <db-code-block title="helloWorld.sql" [script]="sqlHelloWorld" />
+        <db-code-block [scripts]="scripts" />
       </div>
     </div>
   `,
@@ -52,7 +51,5 @@ import { ContentHeader } from '../../components/content-header/content-header';
   `,
 })
 export class Proficiencies {
-  protected readonly sqlHelloWorld = sqlHelloWorld;
-  protected readonly csharpHelloWorld = csharpHelloWorld;
-  protected readonly typescriptHelloWorld = typescriptHelloWorld;
+  scripts: Script[] = [csharpHelloWorld, sqlHelloWorld, typescriptHelloWorld];
 }

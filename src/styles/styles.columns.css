@@ -1,0 +1,21 @@
+/* mobile */
+@media (max-width: 800px) {
+  .row {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
+
+/* desktop */
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .col-6 {
+    width: 50%;
+  }
+}
