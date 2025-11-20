@@ -26,8 +26,8 @@ import { NgClass } from '@angular/common';
       width: 5rem;
     }
     .lg {
-      height: 7rem;
-      width: 7rem;
+      height: 150px;
+      width: 150px;
     }
   `,
 })

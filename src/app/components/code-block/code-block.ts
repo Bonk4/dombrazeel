@@ -48,10 +48,10 @@ import { NgClass } from '@angular/common';
       background-color: var(--black);
     }
     .tab-header:first-child {
-      border-radius: var(--border-radius) 0 0 0;
+      border-top-left-radius: var(--border-radius);
     }
     .tab-header:last-child {
-      border-radius: 0 var(--border-radius) 0 0;
+      border-top-right-radius: var(--border-radius);
     }
     .tab-header.selected {
       background-color: var(--purple);

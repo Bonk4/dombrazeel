@@ -21,3 +21,9 @@
   height: 5rem;
   width: 5rem;
 }
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}

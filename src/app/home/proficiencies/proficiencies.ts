@@ -19,29 +19,21 @@ import { Script } from '../../components/code-block/models/script';
       <p class="m-0 w-full text-center bg-red">SQL</p>
     </div>
 
-    <div class="flex-row">
-      <div class="w-50">
-        <ul>
-          <li>.NET Framework/Core</li>
-          <ul>
-            <li>Web APIs</li>
-            <li>Server Apps</li>
-            <li>Code-first database management with Entity Framework</li>
-          </ul>
-          <li>JavaScript/TypeScript</li>
-          <li>JS Frameworks</li>
-          <ul>
-            <li>Angular</li>
-            <li>AngularJS</li>
-            <li>React</li>
-          </ul>
-          <li>SQL</li>
-        </ul>
-      </div>
+    <db-code-block [scripts]="scripts" />
 
-      <div class="w-50">
-        <db-code-block [scripts]="scripts" />
-      </div>
+    <div>
+      <div class="initial">C#</div>
+      <p class="mt-3">
+        is my bread and butter, and .NET rules. If I write an API, serverside app, or game project
+        in Godot, I default to writing in C#.
+      </p>
+      <p>
+        When I started writing .NET, it was in the now-labeled .NET Framework. Since, it's matured
+        into Core and now just .NET, and gotten all the better in the meantime. Object-oriented
+        languages have many benefits, and I prefer to write in C# when working in a team
+        environment. Registering classes, implementing interfaces, and extending types have never
+        been easier than in .NET.
+      </p>
     </div>
   `,
   styles: `
