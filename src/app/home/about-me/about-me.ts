@@ -9,7 +9,7 @@ import { Avatar } from '../../components/avatar/avatar';
     <db-content-header>About Me</db-content-header>
     <div>
       <db-avatar
-        img="img/halloween_2025_zoomed.png"
+        img="img/avatar_cropped.jpg"
         alt="Dominic at a halloween party, 2025"
         [size]="'md'"
         class="float-left mr-5"

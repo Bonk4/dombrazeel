@@ -21,15 +21,15 @@ import { FileService } from './services/file-service';
         </div>
       </div>
     </div>
-    <div class="page-section header bg-black deathstinger border-bottom sticky">
+    <div class="page-section header bg-black metal sticky">
       <div class="content mb-3 mt-3">
-        <div class="flex-row justify-between">
+        <div class="flex-row justify-between flex-wrap">
           <div class="flex-row">
-            <a class="nav-link mr-3" href="#about">home</a>
-            <a class="nav-link mr-3" href="/projects">projects</a>
-            <a class="nav-link mr-3" href="/principles">coding principles</a>
+            <a class="nav-link mr-3" href="#about">Home</a>
+            <a class="nav-link mr-3" href="/projects">Projects</a>
+            <a class="nav-link mr-3" href="/principles">Coding Principles</a>
             <a class="nav-link mr-3" href="https://dombrazeel-library.vercel.app" target="_blank"
-              >design library</a
+              >Design Library</a
             >
             <a class="nav-link mr-3" href="/contact">Contact</a>
           </div>
@@ -38,10 +38,22 @@ import { FileService } from './services/file-service';
               class="nav-link mr-3"
               href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
               target="_blank"
-              >linkedIn</a
+              >LinkedIn</a
             >
-            <a class="nav-link mr-3" href="#" (click)="downloadResume()">resume</a>
+            <a class="nav-link mr-3" href="#" (click)="downloadResume()">Resume</a>
           </div>
+        </div>
+      </div>
+
+      <div class="separator flex-row justify-center w-full sticky">
+        <div class="flex-row w-10">
+          <div class="nav-separator nav-separator-start"></div>
+        </div>
+        <div class="flex-row justify-evenly w-80">
+          <div class="nav-separator nav-separator-body"></div>
+        </div>
+        <div class="flex-row w-10">
+          <div class="nav-separator nav-separator-end"></div>
         </div>
       </div>
     </div>
@@ -67,8 +79,47 @@ import { FileService } from './services/file-service';
     </div>
   `,
   styles: `
-    .logo {
-      outline: darkred 1px solid;
+    .separator {
+      height: 5px;
+    }
+
+    .nav-separator {
+      position: relative;
+      height: 5px;
+      width: 100%;
+    }
+
+    .nav-separator-body::after,
+    .nav-separator-start::after,
+    .nav-separator-end::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: 50px !important;
+      background-repeat: no-repeat;
+      background-size: 100% 50px !important;
+    }
+
+    .nav-separator-body::after {
+      background-image: url('/img/line-body.png');
+      background-repeat: no-repeat;
+    }
+
+    .nav-separator-start::after {
+      width: auto;
+      right: 0 !important;
+      background-image: url('/img/line-edge.png');
+      -webkit-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+    .nav-separator-end::after {
+      left: 0;
+      background-image: url('/img/line-edge.png');
     }
   `,
 })

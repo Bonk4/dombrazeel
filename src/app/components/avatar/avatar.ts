@@ -15,7 +15,7 @@ import { NgClass } from '@angular/common';
   styles: `
     img {
       border-radius: 5rem;
-      outline: 5px #4e648e solid;
+      outline: 6px var(--primary) solid;
     }
     .sm {
       height: 3rem;

@@ -3,12 +3,13 @@
   margin-bottom: 1.2rem;
 }
 .content {
-  max-width: 1000px;
+  width: min(1000px, 90%);
   margin-left: auto;
   margin-right: auto;
 }
 .header {
   top: 0;
+  margin-bottom: 0 !important;
 }
 .footer {
   height: 3rem;

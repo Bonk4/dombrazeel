@@ -4,6 +4,10 @@
   justify-content: space-evenly;
 }
 
+.justify-evenly {
+  justify-content: space-evenly !important;
+}
+
 .justify-center {
   justify-content: center !important;
 }
@@ -22,4 +26,16 @@
 
 .justify-end {
   justify-content: end !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+.flex-grow-2 {
+  flex-grow: 2 !important;
 }
