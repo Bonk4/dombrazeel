@@ -1,11 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { FileService } from '../services/file-service';
 
 @Component({
   selector: 'db-navbar',
   imports: [],
   template: `
-    <div class="page-section bg-black deathstinger mb-0">
+    <div id="title-header" class="page-section bg-black deathstinger mb-0">
       <div class="content">
         <div class="row">
           <div class="col-6 desktop-text-start mobile-text-center flex-row justify-start">
@@ -23,7 +23,10 @@ import { FileService } from '../services/file-service';
     <div class="page-section header bg-black metal sticky">
       <div class="content mb-3 mt-3">
         <div class="flex-row justify-between flex-wrap">
-          <div class="flex-row flex-wrap">
+          <div class="mt-2 flex-row flex-wrap">
+            @if (showInitials()) {
+              <div class="animate-reveal-horizonal highlight-underline-primary mr-3">DB</div>
+            }
             <a class="nav-link mr-3" href="/">Home</a>
             <a class="nav-link mr-3" href="/projects">Projects</a>
             <a class="nav-link mr-3" href="/principles">Coding Principles</a>
@@ -37,8 +40,9 @@ import { FileService } from '../services/file-service';
               class="nav-link mr-3"
               href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
               target="_blank"
-              >LinkedIn</a
             >
+              LinkedIn
+            </a>
             <a class="nav-link mr-3" href="#" (click)="downloadResume()">Resume</a>
           </div>
         </div>
@@ -104,6 +108,23 @@ import { FileService } from '../services/file-service';
 })
 export class Navbar {
   private fileService = inject(FileService);
+
+  topSectionHeight: number = 0;
+
+  // @ViewChild('#title-header') topSection!: ElementRef<HTMLDivElement>;
+  showInitials = signal<boolean>(false);
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    const header = document.getElementById('');
+    const height = header?.offsetHeight;
+
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    const isScrolled = scrollTop > (height ?? 0) + 25;
+    this.showInitials.set(isScrolled);
+  }
+
   downloadResume() {
     this.fileService.downloadAsset('DominicBrazeel_Resume.pdf');
   }

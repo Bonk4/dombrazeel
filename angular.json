@@ -32,6 +32,7 @@
             ],
             "styles": [
               "src/styles/styles.css",
+              "src/styles/styles.animations.css",
               "src/styles/styles.layout.css",
               "src/styles/styles.borders.css",
               "src/styles/styles.buttons.css",
@@ -100,6 +101,7 @@
             ],
             "styles": [
               "src/styles/styles.css",
+              "src/styles/styles.animations.css",
               "src/styles/styles.layout.css",
               "src/styles/styles.borders.css",
               "src/styles/styles.buttons.css",

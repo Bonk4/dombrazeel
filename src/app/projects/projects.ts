@@ -13,19 +13,10 @@ import { ContentHeader } from '../components/content-header/content-header';
       times over the year to help run my DnD games. When I'm not building simple web apps to learn
       new frameworks and ideas, I love playing around in Godot.
     </p>
-    <p>
-      My favorite technologies are NodeJS and .NET Core. .NET gets better and better every year, and
-      I feel like I'm always finding new features and libraries that I haven't used before. Since
-      .NET 8, I haven't been able to go back from the syntax sugar and simple Dependency Injection
-      it provides.
-    </p>
-    <p>
-      These projects are a few of my favorites. None are perfect, but they all represent a step on
-      my journey of self-improvement learning to code.
-    </p>
-    <div class="flex-row mb-5">
+
+    <div class="flex-row flex-wrap row-gap-1 mb-5">
       <db-card
-        class="card-container"
+        class="card-container flex-grow-1"
         title="I Cast Fireball!"
         background="red"
         href="https://icastfireball-angular.vercel.app/"
@@ -36,8 +27,9 @@ import { ContentHeader } from '../components/content-header/content-header';
         integrated copy of the original DnD 5E Monster Manual to quickly add monsters from the game
         with complete stats.
       </db-card>
+
       <db-card
-        class="card-container"
+        class="card-container flex-grow-1"
         title="Ng Games"
         background="purple"
         href="https://checkers-ng.vercel.app/"
@@ -48,7 +40,7 @@ import { ContentHeader } from '../components/content-header/content-header';
         back on, and I still go back to play checkers from time to time.
       </db-card>
       <db-card
-        class="card-container"
+        class="card-container flex-grow-1"
         title="Tic-Tac-Toe World Championship!"
         background="green"
         href="https://github.com/Bonk4/TicTacToe"
@@ -56,10 +48,8 @@ import { ContentHeader } from '../components/content-header/content-header';
         Prove your ability to beat an (admittedly simple) AI opponent! This C# console app was built
         to practice game devlopment in a simple environment before trying my hand at Godot.
       </db-card>
-    </div>
-    <div class="flex-row">
       <db-card
-        class="card-container"
+        class="card-container flex-grow-1"
         title="Pong 2"
         background="green"
         href="https://north-pathway.itch.io/circle-pong"
@@ -70,7 +60,7 @@ import { ContentHeader } from '../components/content-header/content-header';
   `,
   styles: `
     .card-container {
-      width: 32%;
+      max-width: 49%;
     }
   `,
 })

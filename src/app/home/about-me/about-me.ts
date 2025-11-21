@@ -21,9 +21,10 @@ import { Avatar } from '../../components/avatar/avatar';
       </p>
       <p>
         I've worked on a variety of projects over the years, all web, server, or database oriented.
-        When I get free time to develop at home, I work on projects to integrate with my DnD games,
-        amateur game projects, or just learn the new hotness in the development world. I always keep
-        a unit test project handy to test .NET features and tricks before I implement them.
+        When I get free time to develop at home, I work on <a href="/projects">projects</a> to
+        integrate with my DnD games, amateur game projects, or just learn the new hotness in the
+        development world. I always keep a unit test project handy to test .NET features and tricks
+        before I implement them.
       </p>
       <p>
         If I'm not writing code, I'm probably at a concert or supporting a brewery somewhere in
