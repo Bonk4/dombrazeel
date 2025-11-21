@@ -9,7 +9,7 @@ import { FileService } from './services/file-service';
     <div class="page-section bg-black deathstinger mb-0">
       <div class="content">
         <div class="row">
-          <div class="col-6 desktop-text-start mobile-text-center">
+          <div class="col-6 desktop-text-start mobile-text-center flex-row justify-start">
             <h1 class="m-auto-v w-full">Dominic Brazeel</h1>
           </div>
           <div class="col-6 mt-2 mb-2 desktop-text-end mobile-text-center">
@@ -24,13 +24,13 @@ import { FileService } from './services/file-service';
     <div class="page-section header bg-black metal sticky">
       <div class="content mb-3 mt-3">
         <div class="flex-row justify-between flex-wrap">
-          <div class="flex-row">
-            <a class="nav-link mr-3" href="#about">Home</a>
+          <div class="flex-row flex-wrap">
+            <a class="nav-link mr-3" href="/">Home</a>
             <a class="nav-link mr-3" href="/projects">Projects</a>
             <a class="nav-link mr-3" href="/principles">Coding Principles</a>
-            <a class="nav-link mr-3" href="https://dombrazeel-library.vercel.app" target="_blank"
-              >Design Library</a
-            >
+            <a class="nav-link mr-3" href="https://dombrazeel-library.vercel.app" target="_blank">
+              Design Library
+            </a>
             <a class="nav-link mr-3" href="/contact">Contact</a>
           </div>
           <div class="flex-row">

@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'db-content-header',
   imports: [],
   template: `
-    <div class="brush-stroke-underline">
-      <h2 class="deathstinger text-secondary">
+    <div>
+      <h2 class="deathstinger text-secondary relative brush-stroke-underline">
         <span class="pl-3xl pr-3">
           <ng-content />
         </span>
@@ -13,13 +13,24 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
-    .brush-stroke-underline {
-      overflow: visible;
-      background-image: url('/img/brush-stroke-banner.png') !important;
+    h2 {
+      z-index: -1;
+    }
+    .brush-stroke-underline::after {
+      z-index: -2;
+      content: '';
+      position: absolute;
+
+      top: 0;
+      left: -25px;
+
+      width: 300px;
+      height: 115px;
+
+      background-image: url('/img/brush-stroke-banner.png');
       background-repeat: no-repeat;
-      background-position: left;
       background-size: 300px 150px;
-      background-position-x: -25px;
+      background-position: bottom left;
     }
   `,
 })

@@ -11,8 +11,8 @@ import { Avatar } from '../../components/avatar/avatar';
       <db-avatar
         img="img/avatar_cropped.jpg"
         alt="Dominic at a halloween party, 2025"
-        [size]="'md'"
-        class="float-left mr-5"
+        [size]="'lg'"
+        class="float-left mr-xl"
       />
       <p>
         I'm a full-stack web developer based in Kansas City. I've been developing web applications
