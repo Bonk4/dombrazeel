@@ -14,7 +14,7 @@ export const csharpBetterIfCheck = `var attributeToCheck = object?.Property?.Sub
 export const sqlHelloWorld: Script = {
   name: 'helloWorld.sql',
   code: `declare @message varchar = 'Hello, World!';
-select 'Hello, World!' from main;`,
+select @message`,
 };
 
 export const csharpHelloWorld: Script = {

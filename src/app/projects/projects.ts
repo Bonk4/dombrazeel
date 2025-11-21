@@ -9,20 +9,15 @@ import { ContentHeader } from '../components/content-header/content-header';
     <db-content-header>Projects</db-content-header>
     <p>
       I love coding projects in my free time. My passions lie in web and game development. My
-      favorite project, I Cast Fireball!, is an app I've built several times over the year to help
-      run my DnD games. When I'm not building simple web apps to learn new frameworks and ideas, I
-      love playing around in Godot.
+      favorite project, <span class="italic">I Cast Fireball!</span>, is an app I've built several
+      times over the year to help run my DnD games. When I'm not building simple web apps to learn
+      new frameworks and ideas, I love playing around in Godot.
     </p>
     <p>
       My favorite technologies are NodeJS and .NET Core. .NET gets better and better every year, and
       I feel like I'm always finding new features and libraries that I haven't used before. Since
       .NET 8, I haven't been able to go back from the syntax sugar and simple Dependency Injection
       it provides.
-    </p>
-    <p>
-      Angular is becoming a quick favorite as well, but that may be recency bias. As a framework, it
-      blends together with .NET so well that you barely notice you're writing typescript instead of
-      C#. Services, directives, and more are so easy to inject and utlize cross-app.
     </p>
     <p>
       These projects are a few of my favorites. None are perfect, but they all represent a step on

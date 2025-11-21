@@ -26,10 +26,10 @@ import { Avatar } from '../../components/avatar/avatar';
         a unit test project handy to test .NET features and tricks before I implement them.
       </p>
       <p>
-        If I'm not writing code, I'm probably at a concert or supporting a local brewery somewhere
-        in Kansas City. I've worked as a local beer-tender, and know many local brewers in the
-        Kansas City area. I'm an avid metalhead and hardcore music fan, and am always looking for
-        local shows. Some of my favorite bands are <span class="italic">Spiritbox</span>,
+        If I'm not writing code, I'm probably at a concert or supporting a brewery somewhere in
+        Kansas City. I've worked as a local beer-tender, and know many local brewers in the Kansas
+        City area. I'm an avid metalhead and hardcore music fan, and am always looking for local
+        shows. Some of my favorite bands are <span class="italic">Spiritbox</span>,
         <span class="italic">August Burns Red</span>, and the
         <span class="italic">Dead Kennedys</span>.
       </p>

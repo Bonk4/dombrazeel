@@ -19,7 +19,7 @@ import { NgClass } from '@angular/common';
         <img class="card-image border-top-rounded" [src]="img()" alt="picture" />
       }
       <div class="p-lg">
-        <h3 class="mt-0">{{ title() }}</h3>
+        <h3 class="mt-0 semi-bold">{{ title() }}</h3>
         <p class="text-grey font-sm"><ng-content /></p>
       </div>
     </div>

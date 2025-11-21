@@ -13,7 +13,7 @@ type Story = StoryObj<Avatar>;
 export const Default: Story = {
   render: () => ({
     template: `
-      <db-avatar [img]="'img/halloween_2025_zoomed.png'">Primary</db-avatar>
+      <db-avatar [img]="'img/avatar_cropped.jpg'">Primary</db-avatar>
     `,
   }),
 };

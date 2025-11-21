@@ -9,8 +9,7 @@ import { ContentHeader } from './content-header/content-header';
     <p>
       Hopefully you came here from
       <a href="https://www.dombrazeel.dev/" target="_blank">my portfolio</a>. Either way, welcome!
-      My name is
-      <span class="text-yellow highlight-underline-purple pl-2 pr-2">Dominic Brazeel</span> and this
+      My name is <span class="highlight-underline-primary pl-2 pr-2">Dominic Brazeel</span> and this
       is a component library I made to help me build web applications, specifically my portfolio.
     </p>
     <p>

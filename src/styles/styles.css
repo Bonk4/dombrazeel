@@ -130,6 +130,14 @@ pre {
   font-family: 'Spectral Italic', serif !important;
 }
 
+.bold {
+  font-family: 'Spectral Bold', serif !important;
+}
+
+.semi-bold {
+  font-family: 'Spectral SemiBold', serif !important;
+}
+
 .metal {
   font-family: 'MetalMania', fantasy !important;
 }

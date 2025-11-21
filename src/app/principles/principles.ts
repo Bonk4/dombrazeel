@@ -16,24 +16,8 @@ import { Script } from '../components/code-block/models/script';
       >. My primary focus is always developer-first code that is easy to read and maintain. Whatever
       language that may be.
     </p>
-    <p>
-      There are many wrong ways to declare a function, name a variable, or implement a class. We'll
-      never be perfect, but we can make sure our code is legible to the next developer.
-    </p>
-    <p class="mb-4">
-      Simple if checks, for example. You can do everything in one line, if you want (and just
-      learned LINQ):
-    </p>
-    <db-code-block title="badIfCheck.cs" [scripts]="csharpBadIfCheck" />
-    <p class="mb-4">
-      But I'd prefer the code to be legible to the next developer (which will probably be myself a
-      month later). So lets make it legible:
-    </p>
-    <db-code-block title="betterIfCheck.cs" [scripts]="csharpBetterIfCheck" />
-    <p>
-      It's not rocket science, because it shouldn't be. Simple practices like this compound over
-      time, and create a far better codebase for future developers.
-    </p>
+
+    <db-code-block [scripts]="ifChecks" />
 
     <db-content-header>Build the web one class at a time.</db-content-header>
     <p>
@@ -45,14 +29,22 @@ import { Script } from '../components/code-block/models/script';
     </p>
     <p>
       With this in mind, I try to live what I preach. I
-      <a href="https://github.com/Bonk4/dombrazeel">built this portfolio</a> with compositional
+      <a href="https://github.com/Bonk4/dombrazeel">built my portfolio</a> with compositional
       classes, reusable components, and encourage you to check me on that. After all, our code is
       only as good as the next developer says it is.
+    </p>
+
+    <db-content-header>AI is here to stay.</db-content-header>
+    <p>
+      AI is a part of our development landscape, whether we like it or not. As developers, it's our
+      job to understand how our code works, whether it was written by ourselves, a coworker, or an
+      LLM.
     </p>
   `,
   styles: ``,
 })
 export class Principles {
-  csharpBadIfCheck: Script[] = [{ name: 'badIfCheck.cs', code: csharpBadIfCheck }];
-  csharpBetterIfCheck: Script[] = [{ name: 'betterIfCheck.cs', code: csharpBetterIfCheck }];
+  badIfCheck: Script[] = [{ name: 'badIfCheck.cs', code: csharpBadIfCheck }];
+  betterIfCheck: Script[] = [{ name: 'betterIfCheck.cs', code: csharpBetterIfCheck }];
+  ifChecks: Script[] = [...this.badIfCheck, ...this.betterIfCheck];
 }
