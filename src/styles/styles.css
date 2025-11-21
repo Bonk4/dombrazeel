@@ -127,7 +127,7 @@ pre {
 }
 
 .italic {
-  font-family: 'EB Garamond Italic', serif !important;
+  font-family: 'Spectral Italic', serif !important;
 }
 
 .metal {
@@ -156,6 +156,7 @@ pre {
 }
 
 .sticky {
+  z-index: 2;
   position: sticky !important;
 }
 

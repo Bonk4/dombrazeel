@@ -14,10 +14,10 @@ import { Component } from '@angular/core';
   `,
   styles: `
     h2 {
-      z-index: -1;
+      z-index: 1;
     }
     .brush-stroke-underline::after {
-      z-index: -2;
+      z-index: -1;
       content: '';
       position: absolute;
 

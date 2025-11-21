@@ -13,17 +13,18 @@ export const csharpBetterIfCheck = `var attributeToCheck = object?.Property?.Sub
 
 export const sqlHelloWorld: Script = {
   name: 'helloWorld.sql',
-  code: `select 'Hello, World!' from main;`,
+  code: `declare @message varchar = 'Hello, World!';
+select 'Hello, World!' from main;`,
 };
 
 export const csharpHelloWorld: Script = {
   name: 'helloWorld.cs',
-  code: `{
+  code: `public void Main() {
   \tConsole.Write('Hello, World!');
   }`,
 };
 
 export const typescriptHelloWorld: Script = {
-  name: 'helloWorld.cs',
-  code: `console.log('Hello, World!');`,
+  name: 'helloWorld.ts',
+  code: `const message = 'Hello, World!';\nconsole.log(message);`,
 };
