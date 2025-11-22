@@ -2,6 +2,22 @@
   position: relative;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-h-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 /* Width */
 .w-full {
   width: 100%;

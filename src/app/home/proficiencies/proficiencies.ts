@@ -19,14 +19,6 @@ import { Script } from '../../components/code-block/models/script';
     </div>
 
     <db-code-block [scripts]="scripts" />
-
-    <!--    <div>-->
-    <!--      <div class="initial">C#</div>-->
-    <!--      <p class="mt-3">-->
-    <!--        is my bread and butter, and .NET rules. If I write an API, serverside app, or game project-->
-    <!--        in Godot, I default to writing in C#.-->
-    <!--      </p>-->
-    <!--    </div>-->
   `,
   styles: `
     .languages > p {

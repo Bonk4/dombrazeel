@@ -6,7 +6,7 @@ import { NgClass } from '@angular/common';
   selector: 'db-code-block',
   imports: [NgClass],
   template: `
-    <div class="flex-row justify-start ml-3">
+    <div class="flex-row justify-start ml-3 overflow-h-auto">
       @for (script of scripts(); track $index) {
         <h5
           class="tab-header mono text-underline p-2"
@@ -19,7 +19,7 @@ import { NgClass } from '@angular/common';
     </div>
 
     <div class="border border-rounded bg-dark-grey w-full">
-      <div class="mono m-2">
+      <div class="mono m-2 overflow-h-auto">
         <table class="code-block">
           @for (line of scriptLines(); track $index) {
             <tr class="font-sm">
