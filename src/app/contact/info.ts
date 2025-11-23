@@ -28,8 +28,15 @@ import { ContentHeader } from '../components/content-header/content-header';
       <div class="col-6 text-end">
         <h2>Credit</h2>
         <h3>Technologies</h3>
-        <div>Written in Angular <i class="fa-brands fa-angular"></i></div>
-        <div>Hosted with Vercel</div>
+        <div>
+          Written in <a href="https://angular.dev/" target="_blank">Angular</a>
+          <i class="fa-brands fa-angular ml-2"></i>
+        </div>
+        <div>
+          Component testing via
+          <a href="https://storybook.js.org/" target="_blank">Storybook</a>
+        </div>
+        <div>Hosted with <a href="https://vercel.com/" target="_blank">Vercel</a></div>
 
         <h3>Assets</h3>
 

@@ -24,15 +24,26 @@ import { ContentHeader } from '../components/content-header/content-header';
     <div class="row flex-wrap gap-2 mt-5 mb-5">
       <db-card
         class="card-container"
+        title="Portfolio Source"
+        icon="palette"
+        background="blue"
+        href="https://github.com/Bonk4/dombrazeel"
+      >
+        If you want to see the source code for my portfolio, this is it! With inspiration from
+        modern frameworks like Tailwind and Prime, I used compositional classes to build out my
+        style library in pure CSS. Everything else is HTML and Angular for my JS scripting.
+      </db-card>
+      <db-card
+        class="card-container"
         title="Portfolio Library"
         icon="paintbrush"
         background="blue"
         href="https://dombrazeel-library.vercel.app"
       >
         This is the Storybook library for my portfolio. Here is where I developed and tested all the
-        components used in my portfolio. Storybook is one of my favorite tools for building and
-        testing web components. I find developing in it first exposes poorly thought out patterns,
-        hard-coupled code, and improves the developer experience for frontend development.
+        individual components used here. Storybook is one of my favorite tools for building and
+        testing web components. I find developing in it first exposes poorly coupled code, and
+        improves the developer experience for frontend development.
       </db-card>
       <db-card
         class="card-container flex-grow-1"

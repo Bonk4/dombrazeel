@@ -1,11 +1,4 @@
 @font-face {
-  font-family: 'Red Hat Display';
-  src: url('/fonts/redhat/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'JB Mono';
   src: url('/fonts/mono/JetBrainsMono_wght.ttf') format('truetype');
   font-weight: normal;
@@ -13,22 +6,8 @@
 }
 
 @font-face {
-  font-family: 'MetalMania';
-  src: url('/fonts/MetalMania-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Rockakura';
-  src: url('/fonts/Rockakura-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Death Stinger';
-  src: url('/fonts/DeathStingerItalic.ttf') format('truetype');
+  src: url('/fonts/deathstinger/DeathStingerItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -95,18 +74,6 @@ body {
   --secondary: white;
   --link: red;
 
-  /* neon */
-  --rose: #f72585ff;
-  --fandango: #b5179eff;
-  --grape: #7209b7ff;
-  --chrysler-blue: #560badff;
-  --dark-blue: #480ca8ff;
-  --zaffre: #3a0ca3ff;
-  --palatinate-blue: #3f37c9ff;
-  --neon-blue: #4361eeff;
-  --chefchaouen-blue: #4895efff;
-  --vivid-sky-blue: #4cc9f0ff;
-
   /* base dark palette */
   --purple: #764b8e;
   --pink: #aa5585;
@@ -138,14 +105,6 @@ button {
 
 .semi-bold {
   font-family: 'Spectral SemiBold', serif !important;
-}
-
-.metal {
-  font-family: 'MetalMania', fantasy !important;
-}
-
-.rockakura {
-  font-family: 'Rockakura', fantasy !important;
 }
 
 .deathstinger {
