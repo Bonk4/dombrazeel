@@ -10,7 +10,7 @@ import { ContentHeader } from '../components/content-header/content-header';
       <div class="col-6">
         <db-content-header>Contact</db-content-header>
         <p>
-          <i class="fa-solid fa-message mr-2"></i>
+          <i class="fa-solid fa-envelope mr-2"></i>
           <a href="mailto:dombrazeel@gmail.com">dombrazeel&#64;gmail.com</a>
         </p>
         <p class="mb-5">
@@ -18,6 +18,10 @@ import { ContentHeader } from '../components/content-header/content-header';
           <a href="https://www.linkedin.com/in/dominic-brazeel-a6922584/" target="_blank"
             >Dominic Brazeel</a
           >
+        </p>
+        <p class="mb-5">
+          <i class="fa-brands fa-github mr-2"></i>
+          <a href="https://github.com/Bonk4/" target="_blank">Bonk4</a>
         </p>
         <p>
           <i class="fa-solid fa-download mr-2"></i>

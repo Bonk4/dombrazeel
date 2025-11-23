@@ -22,7 +22,7 @@ import { NgClass } from '@angular/common';
     </div>
     <div class="page-section header bg-black sticky">
       <div class="content mb-3 mt-3">
-        <div class="mt-2 row flex-wrap gap-2 justify-center-mobile justify-start">
+        <div class="mt-2 row flex-wrap gap-2 justify-center-mobile justify-between">
           @if (showInitials()) {
             <div class="deathstinger font-lg animate-reveal-horizonal m-auto-v">
               Dominic Brazeel
@@ -45,6 +45,12 @@ import { NgClass } from '@angular/common';
             <a class="nav-link" [ngClass]="{ 'text-underline': routeActive('info') }" href="/info"
               >Info</a
             >
+          </div>
+          <div class="row justify-end gap-2 v-align-middle mobile-hidden">
+            <a href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Bonk4/"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
