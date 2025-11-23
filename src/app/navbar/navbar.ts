@@ -23,12 +23,13 @@ import { NgClass } from '@angular/common';
     <div class="page-section header bg-black sticky">
       <div class="content mb-3 mt-3">
         <div class="mt-2 row flex-wrap gap-2 justify-center-mobile justify-between">
-          @if (showInitials()) {
-            <div class="deathstinger font-lg animate-reveal-horizonal m-auto-v">
-              Dominic Brazeel
-            </div>
-          }
           <div class="row gap-1 deathstinger">
+            @if (showInitials()) {
+              <div class="deathstinger font-lg animate-reveal-horizonal m-auto-v">
+                <span class="desktop-hidden">DB</span>
+                <span class="mobile-hidden">Dominic Brazeel</span>
+              </div>
+            }
             <a class="nav-link" [ngClass]="{ 'text-underline': routeActive('') }" href="/">Home</a>
             <a
               class="nav-link"
@@ -46,7 +47,7 @@ import { NgClass } from '@angular/common';
               >Info</a
             >
           </div>
-          <div class="row justify-end gap-2 v-align-middle mobile-hidden">
+          <div class="row justify-end gap-2 m-auto-v mobile-hidden">
             <a href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
@@ -71,6 +72,8 @@ import { NgClass } from '@angular/common';
   styles: `
     .separator {
       height: 5px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .nav-separator {
