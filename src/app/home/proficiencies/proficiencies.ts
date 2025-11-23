@@ -7,25 +7,29 @@ import { Script } from '../../components/code-block/models/script';
   selector: 'db-proficiencies',
   imports: [CodeBlock],
   template: `
-    <!--    <db-content-header>Proficiencies</db-content-header>-->
-    <div class="mt-lg"></div>
     <div
-      class="row justify-around languages mono bg-purple b-1 border-secondary border-rounded of-hidden"
+      class="row justify-stretch flex-wrap languages mono bg-purple b-1 border-rounded of-hidden"
     >
-      <p class="m-0 w-full text-center bg-blue">TS</p>
-      <p class="m-0 w-full text-center bg-orange">JS</p>
-      <p class="m-0 w-full text-center bg-purple">C#</p>
-      <p class="m-0 w-full text-center bg-red">SQL</p>
+      <div class="text-center bg-blue">TS</div>
+      <div class="text-center bg-orange">JS</div>
+      <div class="text-center bg-purple">C#</div>
+      <div class="text-center bg-red">SQL</div>
     </div>
 
     <db-code-block [scripts]="scripts" />
   `,
   styles: `
-    .languages > p {
+    .languages > div {
       font-size: 2.5rem;
+      width: 25%;
+    }
+    @media (max-width: 800px) {
+      .languages > div {
+        width: 50%;
+      }
     }
   `,
 })
 export class Proficiencies {
-  scripts: Script[] = [csharpHelloWorld, sqlHelloWorld, typescriptHelloWorld];
+  scripts: Script[] = [csharpHelloWorld, typescriptHelloWorld, sqlHelloWorld];
 }
