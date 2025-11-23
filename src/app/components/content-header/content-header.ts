@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <div>
       <h2 class="deathstinger text-secondary relative brush-stroke-underline">
-        <span class="pl-3xl pr-3">
+        <span class="pr-3">
           <ng-content />
         </span>
       </h2>
@@ -17,12 +17,13 @@ import { Component } from '@angular/core';
       z-index: 1;
     }
     .brush-stroke-underline::after {
+      pointer-events: none;
       z-index: -1;
       content: '';
       position: absolute;
 
       top: 0;
-      left: -25px;
+      left: -4rem;
 
       width: 300px;
       height: 115px;

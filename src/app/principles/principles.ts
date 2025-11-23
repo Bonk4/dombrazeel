@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CodeBlock } from '../components/code-block/code-block';
-import { csharpBadIfCheck, csharpBetterIfCheck } from '../scripts/scripts';
+import { flexCss, hardToReadCheck, humanReadableCheck, sizingCss } from '../scripts/scripts';
 import { ContentHeader } from '../components/content-header/content-header';
 import { Script } from '../components/code-block/models/script';
 
@@ -8,7 +8,7 @@ import { Script } from '../components/code-block/models/script';
   selector: 'db-principles',
   imports: [CodeBlock, ContentHeader],
   template: `
-    <db-content-header>Code should be human-readable.</db-content-header>
+    <db-content-header>Code should be human-readable</db-content-header>
     <p>
       It's proven that
       <a href="https://www.google.com/search?q=code+is+harder+to+read+than+it+is+to+write"
@@ -19,7 +19,13 @@ import { Script } from '../components/code-block/models/script';
 
     <db-code-block [scripts]="ifChecks" />
 
-    <db-content-header>Build the web one class at a time.</db-content-header>
+    <db-content-header>Fail fast</db-content-header>
+    <p>
+      New frameworks, patterns, and trends are evolving web development every day. It's important to
+      stay fresh and try new things, but let go when they don't work.
+    </p>
+
+    <db-content-header>Build the web one class at a time</db-content-header>
     <p>
       As developers, the less CSS we write, the happier we are. Tailwind is growing in popularity
       because many developers know CSS fundamentals, but hate re-writing it. Apps should be built
@@ -34,17 +40,18 @@ import { Script } from '../components/code-block/models/script';
       only as good as the next developer says it is.
     </p>
 
-    <db-content-header>AI is here to stay.</db-content-header>
+    <db-code-block [scripts]="cssScripts" />
+
+    <db-content-header>AI is here to stay</db-content-header>
     <p>
       AI is a part of our development landscape, whether we like it or not. As developers, it's our
       job to understand how our code works, whether it was written by ourselves, a coworker, or an
-      LLM.
+      LLM. It's key to use AI intentionally, and effectively.
     </p>
   `,
   styles: ``,
 })
 export class Principles {
-  badIfCheck: Script[] = [{ name: 'badIfCheck.cs', code: csharpBadIfCheck }];
-  betterIfCheck: Script[] = [{ name: 'betterIfCheck.cs', code: csharpBetterIfCheck }];
-  ifChecks: Script[] = [...this.badIfCheck, ...this.betterIfCheck];
+  ifChecks: Script[] = [hardToReadCheck, humanReadableCheck];
+  cssScripts: Script[] = [sizingCss, flexCss];
 }

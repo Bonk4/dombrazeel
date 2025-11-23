@@ -5,21 +5,21 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
 
-  background-color: var(--purple);
+  background-color: var(--primary);
   color: var(--white);
 }
 .btn:hover {
+  cursor: pointer;
   outline: 1px solid var(--white);
+  text-decoration: none !important;
 }
 .btn-primary {
-  background-color: var(--dark-green);
 }
 .btn-secondary {
-  background-color: var(--blue);
+  outline: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
 }
 .btn-link {
   background-color: transparent;
-}
-.btn:hover {
-  text-decoration: underline !important;
 }

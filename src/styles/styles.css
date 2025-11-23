@@ -65,6 +65,10 @@ pre {
   font-family: 'JB Mono', monospace;
 }
 
+body {
+  margin: 0;
+}
+
 :root {
   color-scheme: dark;
   color: var(--white);
@@ -117,13 +121,11 @@ pre {
   --dark-grey: #151515;
   --black: #000;
 
-  /* dark-blue palettee */
-  --dark-blue-grey: #1b262c;
-  --dark-dark-blue: #0f4c75;
-  --dark-blue: #3282b8;
-  --dark-light-blue: #bbe1fa;
-
   --border-radius: 0.4rem;
+}
+
+button {
+  font-family: 'Spectral SemiBold', serif;
 }
 
 .italic {
@@ -169,6 +171,16 @@ pre {
 }
 
 /* display */
+.desktop-hidden {
+  @media (min-width: 800px) {
+    display: none !important;
+  }
+}
+.mobile-hidden {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
 .d-none {
   display: none;
 }

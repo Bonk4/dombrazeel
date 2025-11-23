@@ -10,7 +10,7 @@ import { Script } from '../../components/code-block/models/script';
     <!--    <db-content-header>Proficiencies</db-content-header>-->
     <div class="mt-lg"></div>
     <div
-      class="flex-row justify-around languages mono bg-purple b-1 border-secondary border-rounded of-hidden"
+      class="row justify-around languages mono bg-purple b-1 border-secondary border-rounded of-hidden"
     >
       <p class="m-0 w-full text-center bg-blue">TS</p>
       <p class="m-0 w-full text-center bg-orange">JS</p>

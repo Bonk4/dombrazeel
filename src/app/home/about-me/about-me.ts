@@ -8,16 +8,12 @@ import { Avatar } from '../../components/avatar/avatar';
   template: `
     <db-content-header>About Me</db-content-header>
     <div>
-      <db-avatar
-        img="img/avatar_cropped.jpg"
-        alt="Dominic at a halloween party, 2025"
-        [size]="'lg'"
-        class="float-left mr-xl"
-      />
+      <db-avatar img="img/coding.jpg" alt="Dominic" [size]="'lg'" class="float-left mr-xl" />
       <p>
-        I'm a full-stack web developer based in Kansas City. I've been developing web applications
-        professionally since 2014, utilizing a variety of .NET and NodeJS tools. I love craft beer,
-        heavy metal, and clean code.
+        I'm a
+        <span class="semi-bold highlight-underline-primary">full-stack web developer</span> based in
+        Kansas City. I've been developing web applications professionally since 2014, specializing
+        in .NET and NodeJS tools. I love craft beer, heavy metal, and clean code.
       </p>
       <p>
         I've worked on a variety of projects over the years, all web, server, or database oriented.
@@ -27,10 +23,9 @@ import { Avatar } from '../../components/avatar/avatar';
         before I implement them.
       </p>
       <p>
-        If I'm not writing code, I'm probably at a concert or supporting a brewery somewhere in
-        Kansas City. I've worked as a local beer-tender, and know many local brewers in the Kansas
-        City area. I'm an avid metalhead and hardcore music fan, and am always looking for local
-        shows. Some of my favorite bands are <span class="italic">Spiritbox</span>,
+        If I'm not writing code, I'm probably at a concert or supporting a local brewery. I've
+        worked as a local bartender, and I'm an avid metalhead and hardcore music fan. Some of my
+        favorite bands are <span class="italic">Spiritbox</span>,
         <span class="italic">August Burns Red</span>, and the
         <span class="italic">Dead Kennedys</span>.
       </p>

@@ -1,14 +1,14 @@
-import { Component, HostListener, inject, signal } from '@angular/core';
-import { FileService } from '../services/file-service';
+import { Component, HostListener, signal } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'db-navbar',
-  imports: [],
+  imports: [NgClass],
   template: `
     <div id="title-header" class="page-section bg-black deathstinger mb-0">
       <div class="content">
-        <div class="row">
-          <div class="col-6 desktop-text-start mobile-text-center flex-row justify-start">
+        <div class="row flex-wrap">
+          <div class="col-6 desktop-text-start mobile-text-center">
             <h1 class="m-auto-v w-full">Dominic Brazeel</h1>
           </div>
           <div class="col-6 mt-2 mb-2 desktop-text-end mobile-text-center">
@@ -20,42 +20,43 @@ import { FileService } from '../services/file-service';
         </div>
       </div>
     </div>
-    <div class="page-section header bg-black metal sticky">
+    <div class="page-section header bg-black sticky">
       <div class="content mb-3 mt-3">
-        <div class="flex-row justify-between flex-wrap">
-          <div class="mt-2 flex-row flex-wrap">
-            @if (showInitials()) {
-              <div class="animate-reveal-horizonal highlight-underline-primary mr-3">DB</div>
-            }
-            <a class="nav-link mr-3" href="/">Home</a>
-            <a class="nav-link mr-3" href="/projects">Projects</a>
-            <a class="nav-link mr-3" href="/principles">Coding Principles</a>
-            <a class="nav-link mr-3" href="https://dombrazeel-library.vercel.app" target="_blank">
-              Design Library
-            </a>
-            <a class="nav-link mr-3" href="/contact">Contact</a>
-          </div>
-          <div class="flex-row">
+        <div class="mt-2 row flex-wrap gap-2 justify-center-mobile justify-start">
+          @if (showInitials()) {
+            <div class="deathstinger font-lg animate-reveal-horizonal m-auto-v">
+              Dominic Brazeel
+            </div>
+          }
+          <div class="row gap-1 deathstinger">
+            <a class="nav-link" [ngClass]="{ 'text-underline': routeActive('') }" href="/">Home</a>
             <a
-              class="nav-link mr-3"
-              href="https://www.linkedin.com/in/dominic-brazeel-a6922584/"
-              target="_blank"
+              class="nav-link"
+              [ngClass]="{ 'text-underline': routeActive('projects') }"
+              href="/projects"
+              >Projects</a
             >
-              LinkedIn
-            </a>
-            <a class="nav-link mr-3" href="#" (click)="downloadResume()">Resume</a>
+            <a
+              class="nav-link"
+              [ngClass]="{ 'text-underline': routeActive('principles') }"
+              href="/principles"
+              >Principles</a
+            >
+            <a class="nav-link" [ngClass]="{ 'text-underline': routeActive('info') }" href="/info"
+              >Info</a
+            >
           </div>
         </div>
       </div>
 
-      <div class="separator flex-row justify-center w-full sticky">
-        <div class="flex-row w-10">
+      <div class="separator row justify-center w-full sticky">
+        <div class="row w-10">
           <div class="nav-separator nav-separator-start"></div>
         </div>
-        <div class="flex-row justify-evenly w-80">
+        <div class="row justify-evenly w-80">
           <div class="nav-separator nav-separator-body"></div>
         </div>
-        <div class="flex-row w-10">
+        <div class="row w-10">
           <div class="nav-separator nav-separator-end"></div>
         </div>
       </div>
@@ -107,11 +108,6 @@ import { FileService } from '../services/file-service';
   `,
 })
 export class Navbar {
-  private fileService = inject(FileService);
-
-  topSectionHeight: number = 0;
-
-  // @ViewChild('#title-header') topSection!: ElementRef<HTMLDivElement>;
   showInitials = signal<boolean>(false);
 
   @HostListener('window:scroll', [])
@@ -125,7 +121,7 @@ export class Navbar {
     this.showInitials.set(isScrolled);
   }
 
-  downloadResume() {
-    this.fileService.downloadAsset('DominicBrazeel_Resume.pdf');
+  routeActive(route: string): boolean {
+    return window.location.pathname === `/${route}`;
   }
 }

@@ -11,6 +11,7 @@ import { NgClass } from '@angular/common';
         'btn-primary': type() === 'primary',
         'btn-secondary': type() === 'secondary',
         'btn-link': type() === 'link',
+        'w-full': stretch(),
       }"
     >
       <ng-content />
@@ -20,4 +21,5 @@ import { NgClass } from '@angular/common';
 })
 export class Button {
   type = input<'primary' | 'secondary' | 'link'>('primary');
+  stretch = input<boolean>(false);
 }

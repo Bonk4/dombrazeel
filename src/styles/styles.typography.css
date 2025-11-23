@@ -108,6 +108,12 @@ a.nav-link:hover {
   }
 }
 
+.mobile-text-justify {
+  @media (max-width: 800px) {
+    text-align: justify !important;
+  }
+}
+
 .bold {
   font-weight: 600;
 }
@@ -121,7 +127,7 @@ a.nav-link:hover {
 }
 
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .text-primary {
@@ -208,32 +214,17 @@ a.nav-link:hover {
 
 /* underline */
 .highlight-underline-primary {
-  box-shadow: inset 0 -0.5em 0 var(--primary);
+  text-align: center;
+  /*box-shadow: inset 0 -0.5em 0 var(--primary);*/
+  position: relative;
 }
-.highlight-underline-secondary {
-  box-shadow: inset 0 -0.45em 0 var(--secondary);
-}
-.highlight-underline-pink {
-  box-shadow: inset 0 -0.45em 0 var(--pink);
-}
-.highlight-underline-purple {
-  box-shadow: inset 0 -0.45em 0 var(--purple);
-}
-.highlight-underline-grape {
-  box-shadow: inset 0 -0.45em 0 var(--grape);
-}
-.highlight-underline-green {
-  box-shadow: inset 0 -0.45em 0 var(--green);
-}
-.highlight-underline-dark-green {
-  box-shadow: inset 0 -0.45em 0 var(--dark-green);
-}
-.highlight-underline-blue {
-  box-shadow: inset 0 -0.45em 0 var(--blue);
-}
-.highlight-underline-yellow {
-  box-shadow: inset 0 -0.45em 0 var(--yellow);
-}
-.highlight-underline-orange {
-  box-shadow: inset 0 -0.45em 0 var(--orange);
+.highlight-underline-primary::after {
+  content: '';
+  height: 25%;
+  width: 100%;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
 }
