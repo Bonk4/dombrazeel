@@ -17,17 +17,35 @@ import { NgClass } from '@angular/common';
       border-radius: 5rem;
       outline: 6px var(--primary) solid;
     }
-    .sm {
-      height: 3rem;
-      width: 3rem;
+    /*mobile*/
+    @media (min-width: 800px) {
+      .sm {
+        height: 3rem;
+        width: 3rem;
+      }
+      .md {
+        height: 5rem;
+        width: 5rem;
+      }
+      .lg {
+        height: 150px;
+        width: 150px;
+      }
     }
-    .md {
-      height: 5rem;
-      width: 5rem;
-    }
-    .lg {
-      height: 150px;
-      width: 150px;
+    /*desktop*/
+    @media (max-width: 800px) {
+      .sm {
+        height: 3rem;
+        width: 3rem;
+      }
+      .md {
+        height: 5rem;
+        width: 5rem;
+      }
+      .lg {
+        height: 90px;
+        width: 90px;
+      }
     }
   `,
 })

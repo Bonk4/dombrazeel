@@ -44,9 +44,9 @@ import { Script } from '../components/code-block/models/script';
 
     <db-content-header>AI is here to stay</db-content-header>
     <p>
-      AI is a part of our development landscape, whether we like it or not. As developers, it's our
-      job to understand how our code works, whether it was written by ourselves, a coworker, or an
-      LLM. It's key to use AI intentionally, and effectively.
+      AI is now a part of our development landscape, whether we like it or not. As developers, it's
+      our job to understand how our code works, whether it was written by ourselves, a coworker, or
+      an LLM. It's key to use AI as a intentional tool, not a person.
     </p>
   `,
   styles: ``,

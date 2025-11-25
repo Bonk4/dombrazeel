@@ -26,7 +26,7 @@ import { NgClass } from '@angular/common';
           <div class="row gap-1 deathstinger">
             @if (showInitials()) {
               <div class="deathstinger font-lg animate-reveal-horizonal m-auto-v">
-                <span class="desktop-hidden">DB</span>
+                <span class="desktop-hidden mr-2">DB</span>
                 <span class="mobile-hidden">Dominic Brazeel</span>
               </div>
             }

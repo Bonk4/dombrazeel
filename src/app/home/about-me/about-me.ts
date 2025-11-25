@@ -11,9 +11,9 @@ import { Avatar } from '../../components/avatar/avatar';
       <db-avatar img="img/coding.jpg" alt="Dominic" [size]="'lg'" class="float-left mr-xl" />
       <p>
         I'm a
-        <span class="semi-bold highlight-underline-primary">full-stack web developer</span> based in
-        Kansas City. I've been developing web applications professionally since 2014, specializing
-        in .NET and NodeJS tools. I love craft beer, heavy metal, and clean code.
+        <span class="semi-bold highlight-underline-primary no-wrap">full-stack web developer</span>
+        based in Kansas City. I've been developing web applications professionally since 2014,
+        specializing in .NET and NodeJS tools. I love craft beer, heavy metal, and clean code.
       </p>
       <p>
         I've worked on a variety of projects over the years, all web, server, or database oriented.
