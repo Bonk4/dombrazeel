@@ -24,8 +24,8 @@ import { ContentHeader } from '../components/content-header/content-header';
           <a href="https://github.com/Bonk4/" target="_blank">Bonk4</a>
         </p>
         <p>
-          <i class="fa-solid fa-download mr-2"></i>
-          <a href="#" (click)="downloadResume()">Resume</a>
+          <i class="fa-solid fa-file mr-2"></i>
+          <a href="/DominicBrazeelResume.pdf" target="_blank">Resume</a>
         </p>
       </div>
 
@@ -74,6 +74,6 @@ export class Info {
   fileService = inject(FileService);
 
   downloadResume() {
-    this.fileService.downloadAsset('DominicBrazeel_Resume.pdf');
+    this.fileService.downloadAsset('/DominicBrazeelResume.pdf');
   }
 }
