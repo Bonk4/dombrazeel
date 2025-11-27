@@ -10,9 +10,9 @@ import { ContentHeader } from '../components/content-header/content-header';
     <p>
       I love coding projects in my free time. My passions lie in web and game development. My
       favorite project, <span class="italic">I Cast Fireball!</span>, is an app I've built several
-      times over the years to use while I run tabletop games like
-      <span class="italic">Dungeons and Dragons</span>. Aside from building web apps to learn new
-      frameworks and ideas, I love playing around in Godot with C#.
+      times over the years to run my <span class="italic">Dungeons and Dragons</span> game. Aside
+      from building web apps to learn new frameworks and ideas, I love playing around in Godot with
+      C#.
     </p>
     <div class="row justify-end">
       <p>
@@ -30,8 +30,8 @@ import { ContentHeader } from '../components/content-header/content-header';
         href="https://github.com/Bonk4/dombrazeel"
       >
         If you want to see the source code for my portfolio, this is it! With inspiration from
-        modern frameworks like Tailwind and Prime, I used compositional classes to build out my
-        style library in pure CSS. Everything else is HTML and Angular for my JS scripting.
+        modern frameworks like Tailwind and Prime, I build out my style library in pure CSS.
+        Everything else is HTML, and Angular.
       </db-card>
       <db-card
         class="card-container"
@@ -41,9 +41,9 @@ import { ContentHeader } from '../components/content-header/content-header';
         href="https://dombrazeel-library.vercel.app"
       >
         This is the Storybook library for my portfolio. Here is where I developed and tested all the
-        individual components used here. Storybook is one of my favorite tools for building and
-        testing web components. I find developing in it first exposes poorly coupled code, and
-        improves the developer experience for frontend development.
+        individual components used. Storybook is a fantastic tool for building and testing web
+        components. I find developing in it first improves code quality, and the frontend developer
+        experience.
       </db-card>
       <db-card
         class="card-container flex-grow-1"
@@ -65,14 +65,15 @@ import { ContentHeader } from '../components/content-header/content-header';
         background="red"
         href="https://icastfireball.vercel.app/"
       >
-        This version of the app utilizes the Mantine component library, React, and NextJS.
+        An earlier version of <span class="italic">I Cast Fireball!</span>. This version of the app
+        utilizes React, NextJS, and the Mantine component library.
       </db-card>
 
       <db-card
         class="card-container flex-grow-1"
         title="Ng Games"
         icon="gamepad"
-        background="purple"
+        background="green"
         href="https://checkers-ng.vercel.app/"
       >
         A collection of simple singleplayer games, built in Angular. I still come back to play

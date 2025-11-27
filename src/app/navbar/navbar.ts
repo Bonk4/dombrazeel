@@ -52,6 +52,7 @@ import { NgClass } from '@angular/common';
               ><i class="fa-brands fa-linkedin"></i
             ></a>
             <a href="https://github.com/Bonk4/"><i class="fa-brands fa-github"></i></a>
+            <a href="/DominicBrazeelResume.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>
           </div>
         </div>
       </div>
